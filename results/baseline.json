@@ -1,0 +1,519 @@
+{
+  "honoSha": "a8ae5b1d6e8502ce61cd9e7b853d8107e377fc7b",
+  "node": "v24.21.0",
+  "runs": [
+    {
+      "wallMs": 5001,
+      "files": 123,
+      "tests": 5110,
+      "failedTests": 0
+    },
+    {
+      "wallMs": 4844,
+      "files": 123,
+      "tests": 5110,
+      "failedTests": 0
+    },
+    {
+      "wallMs": 4827,
+      "files": 123,
+      "tests": 5110,
+      "failedTests": 0
+    }
+  ],
+  "flakyFiles": [],
+  "files": {
+    "src/adapter/aws-lambda/conninfo.test.ts": {
+      "ms": 26.402099609375,
+      "failedRuns": 0
+    },
+    "src/adapter/aws-lambda/handler.test.ts": {
+      "ms": 35.22509765625,
+      "failedRuns": 0
+    },
+    "src/adapter/bun/conninfo.test.ts": {
+      "ms": 26.700439453125,
+      "failedRuns": 0
+    },
+    "src/adapter/bun/server.test.ts": {
+      "ms": 16.594482421875,
+      "failedRuns": 0
+    },
+    "src/adapter/bun/websocket.test.ts": {
+      "ms": 21.1279296875,
+      "failedRuns": 0
+    },
+    "src/adapter/cloudflare-pages/conninfo.test.ts": {
+      "ms": 15.164306640625,
+      "failedRuns": 0
+    },
+    "src/adapter/cloudflare-pages/handler.test.ts": {
+      "ms": 29.310302734375,
+      "failedRuns": 0
+    },
+    "src/adapter/cloudflare-workers/conninfo.test.ts": {
+      "ms": 14.309814453125,
+      "failedRuns": 0
+    },
+    "src/adapter/cloudflare-workers/serve-static.test.ts": {
+      "ms": 21.144775390625,
+      "failedRuns": 0
+    },
+    "src/adapter/cloudflare-workers/utils.test.ts": {
+      "ms": 0.63037109375,
+      "failedRuns": 0
+    },
+    "src/adapter/cloudflare-workers/websocket.test.ts": {
+      "ms": 35.683349609375,
+      "failedRuns": 0
+    },
+    "src/adapter/deno/conninfo.test.ts": {
+      "ms": 16.2568359375,
+      "failedRuns": 0
+    },
+    "src/adapter/deno/websocket.test.ts": {
+      "ms": 26.104736328125,
+      "failedRuns": 0
+    },
+    "src/adapter/lambda-edge/conninfo.test.ts": {
+      "ms": 47.87744140625,
+      "failedRuns": 0
+    },
+    "src/adapter/lambda-edge/handler.test.ts": {
+      "ms": 38.320556640625,
+      "failedRuns": 0
+    },
+    "src/adapter/netlify/conninfo.test.ts": {
+      "ms": 27.384765625,
+      "failedRuns": 0
+    },
+    "src/adapter/service-worker/handler.test.ts": {
+      "ms": 48.167236328125,
+      "failedRuns": 0
+    },
+    "src/adapter/vercel/conninfo.test.ts": {
+      "ms": 19.020263671875,
+      "failedRuns": 0
+    },
+    "src/adapter/vercel/handler.test.ts": {
+      "ms": 21.72509765625,
+      "failedRuns": 0
+    },
+    "src/client/client.test.ts": {
+      "ms": 42.0439453125,
+      "failedRuns": 0
+    },
+    "src/client/types.test.ts": {
+      "ms": 21.10498046875,
+      "failedRuns": 0
+    },
+    "src/client/utils.test.ts": {
+      "ms": 58.953125,
+      "failedRuns": 0
+    },
+    "src/compose.test.ts": {
+      "ms": 13.10546875,
+      "failedRuns": 0
+    },
+    "src/context.test.ts": {
+      "ms": 15.0712890625,
+      "failedRuns": 0
+    },
+    "src/helper/accepts/accepts.test.ts": {
+      "ms": 40.460693359375,
+      "failedRuns": 0
+    },
+    "src/helper/adapter/index.test.ts": {
+      "ms": 2.142333984375,
+      "failedRuns": 0
+    },
+    "src/helper/cookie/index.test.ts": {
+      "ms": 86.48583984375,
+      "failedRuns": 0
+    },
+    "src/helper/css/index.test.tsx": {
+      "ms": 58.4521484375,
+      "failedRuns": 0
+    },
+    "src/helper/dev/index.test.ts": {
+      "ms": 3.246826171875,
+      "failedRuns": 0
+    },
+    "src/helper/factory/index.test.ts": {
+      "ms": 20.056884765625,
+      "failedRuns": 0
+    },
+    "src/helper/html/index.test.ts": {
+      "ms": 3.078125,
+      "failedRuns": 0
+    },
+    "src/helper/proxy/index.test.ts": {
+      "ms": 24.24658203125,
+      "failedRuns": 0
+    },
+    "src/helper/route/index.test.ts": {
+      "ms": 41.59765625,
+      "failedRuns": 0
+    },
+    "src/helper/ssg/plugins.test.tsx": {
+      "ms": 17.24853515625,
+      "failedRuns": 0
+    },
+    "src/helper/ssg/ssg.test.tsx": {
+      "ms": 104.310302734375,
+      "failedRuns": 0
+    },
+    "src/helper/ssg/utils.test.ts": {
+      "ms": 6.74951171875,
+      "failedRuns": 0
+    },
+    "src/helper/streaming/sse.test.tsx": {
+      "ms": 161.124755859375,
+      "failedRuns": 0
+    },
+    "src/helper/streaming/stream.test.ts": {
+      "ms": 17.40478515625,
+      "failedRuns": 0
+    },
+    "src/helper/streaming/text.test.ts": {
+      "ms": 9.69873046875,
+      "failedRuns": 0
+    },
+    "src/helper/testing/index.test.ts": {
+      "ms": 25.384033203125,
+      "failedRuns": 0
+    },
+    "src/helper/websocket/index.test.ts": {
+      "ms": 17.295166015625,
+      "failedRuns": 0
+    },
+    "src/hono.test.ts": {
+      "ms": 68.142822265625,
+      "failedRuns": 0
+    },
+    "src/http-exception.test.ts": {
+      "ms": 20.4638671875,
+      "failedRuns": 0
+    },
+    "src/jsx/base.test.tsx": {
+      "ms": 6.151611328125,
+      "failedRuns": 0
+    },
+    "src/jsx/children.test.ts": {
+      "ms": 4.158447265625,
+      "failedRuns": 0
+    },
+    "src/jsx/components.test.tsx": {
+      "ms": 212.20751953125,
+      "failedRuns": 0
+    },
+    "src/jsx/context-isolation.test.ts": {
+      "ms": 323.650634765625,
+      "failedRuns": 0
+    },
+    "src/jsx/dom/client.test.tsx": {
+      "ms": 74.847412109375,
+      "failedRuns": 0
+    },
+    "src/jsx/dom/components.test.tsx": {
+      "ms": 359.3076171875,
+      "failedRuns": 0
+    },
+    "src/jsx/dom/context.test.tsx": {
+      "ms": 64.92578125,
+      "failedRuns": 0
+    },
+    "src/jsx/dom/css.test.tsx": {
+      "ms": 107.000732421875,
+      "failedRuns": 0
+    },
+    "src/jsx/dom/hooks/index.test.tsx": {
+      "ms": 64.678955078125,
+      "failedRuns": 0
+    },
+    "src/jsx/dom/index.test.tsx": {
+      "ms": 843.012939453125,
+      "failedRuns": 0
+    },
+    "src/jsx/dom/intrinsic-element/components.test.tsx": {
+      "ms": 230.205322265625,
+      "failedRuns": 0
+    },
+    "src/jsx/dom/server.test.tsx": {
+      "ms": 40.77197265625,
+      "failedRuns": 0
+    },
+    "src/jsx/hooks/dom.test.tsx": {
+      "ms": 187.86572265625,
+      "failedRuns": 0
+    },
+    "src/jsx/hooks/string.test.tsx": {
+      "ms": 3.639404296875,
+      "failedRuns": 0
+    },
+    "src/jsx/index.test.tsx": {
+      "ms": 105.0185546875,
+      "failedRuns": 0
+    },
+    "src/jsx/intrinsic-element/components.test.tsx": {
+      "ms": 11.203857421875,
+      "failedRuns": 0
+    },
+    "src/jsx/jsx-runtime.test.tsx": {
+      "ms": 30.09033203125,
+      "failedRuns": 0
+    },
+    "src/jsx/streaming.test.tsx": {
+      "ms": 369.04931640625,
+      "failedRuns": 0
+    },
+    "src/jsx/utils.test.ts": {
+      "ms": 24.4423828125,
+      "failedRuns": 0
+    },
+    "src/middleware/basic-auth/index.test.ts": {
+      "ms": 56.4716796875,
+      "failedRuns": 0
+    },
+    "src/middleware/bearer-auth/index.test.ts": {
+      "ms": 77.19287109375,
+      "failedRuns": 0
+    },
+    "src/middleware/body-limit/index.test.ts": {
+      "ms": 40.363525390625,
+      "failedRuns": 0
+    },
+    "src/middleware/cache/index.test.ts": {
+      "ms": 58.361083984375,
+      "failedRuns": 0
+    },
+    "src/middleware/combine/index.test.ts": {
+      "ms": 42.053466796875,
+      "failedRuns": 0
+    },
+    "src/middleware/compress/index.test.ts": {
+      "ms": 196.30859375,
+      "failedRuns": 0
+    },
+    "src/middleware/context-storage/index.test.ts": {
+      "ms": 18.603271484375,
+      "failedRuns": 0
+    },
+    "src/middleware/cors/index.test.ts": {
+      "ms": 39.431396484375,
+      "failedRuns": 0
+    },
+    "src/middleware/csrf/index.test.ts": {
+      "ms": 107.47314453125,
+      "failedRuns": 0
+    },
+    "src/middleware/etag/digest.test.ts": {
+      "ms": 5.968994140625,
+      "failedRuns": 0
+    },
+    "src/middleware/etag/index.test.ts": {
+      "ms": 43.259521484375,
+      "failedRuns": 0
+    },
+    "src/middleware/ip-restriction/index.test.ts": {
+      "ms": 32.176513671875,
+      "failedRuns": 0
+    },
+    "src/middleware/jsx-renderer/index.test.tsx": {
+      "ms": 28.2666015625,
+      "failedRuns": 0
+    },
+    "src/middleware/jwk/index.test.ts": {
+      "ms": 107.621337890625,
+      "failedRuns": 0
+    },
+    "src/middleware/jwt/index.test.ts": {
+      "ms": 68.531982421875,
+      "failedRuns": 0
+    },
+    "src/middleware/language/index.test.ts": {
+      "ms": 33.531494140625,
+      "failedRuns": 0
+    },
+    "src/middleware/logger/index.test.ts": {
+      "ms": 2027.42626953125,
+      "failedRuns": 0
+    },
+    "src/middleware/method-not-allowed/index.test.ts": {
+      "ms": 39.421142578125,
+      "failedRuns": 0
+    },
+    "src/middleware/method-override/index.test.ts": {
+      "ms": 29.390625,
+      "failedRuns": 0
+    },
+    "src/middleware/mount/index.test.ts": {
+      "ms": 45.25927734375,
+      "failedRuns": 0
+    },
+    "src/middleware/powered-by/index.test.ts": {
+      "ms": 59.01513671875,
+      "failedRuns": 0
+    },
+    "src/middleware/pretty-json/index.test.ts": {
+      "ms": 39.43408203125,
+      "failedRuns": 0
+    },
+    "src/middleware/request-id/index.test.ts": {
+      "ms": 31.617919921875,
+      "failedRuns": 0
+    },
+    "src/middleware/secure-headers/index.test.ts": {
+      "ms": 75.53076171875,
+      "failedRuns": 0
+    },
+    "src/middleware/serve-static/index.test.ts": {
+      "ms": 33.479248046875,
+      "failedRuns": 0
+    },
+    "src/middleware/serve-static/path.test.ts": {
+      "ms": 1.137451171875,
+      "failedRuns": 0
+    },
+    "src/middleware/timeout/index.test.ts": {
+      "ms": 4228.01025390625,
+      "failedRuns": 0
+    },
+    "src/middleware/timing/index.test.ts": {
+      "ms": 115.1083984375,
+      "failedRuns": 0
+    },
+    "src/middleware/trailing-slash/index.test.ts": {
+      "ms": 23.0576171875,
+      "failedRuns": 0
+    },
+    "src/preset/quick.test.ts": {
+      "ms": 1.673828125,
+      "failedRuns": 0
+    },
+    "src/preset/tiny.test.ts": {
+      "ms": 1.20703125,
+      "failedRuns": 0
+    },
+    "src/request.test.ts": {
+      "ms": 48.62646484375,
+      "failedRuns": 0
+    },
+    "src/router/linear-router/router.test.ts": {
+      "ms": 46.0751953125,
+      "failedRuns": 0
+    },
+    "src/router/pattern-router/router.test.ts": {
+      "ms": 34.077392578125,
+      "failedRuns": 0
+    },
+    "src/router/reg-exp-router/prepared-router.test.ts": {
+      "ms": 36.252197265625,
+      "failedRuns": 0
+    },
+    "src/router/reg-exp-router/router.test.ts": {
+      "ms": 44.130126953125,
+      "failedRuns": 0
+    },
+    "src/router/smart-router/router.test.ts": {
+      "ms": 88.103759765625,
+      "failedRuns": 0
+    },
+    "src/router/trie-router/node.test.ts": {
+      "ms": 15.30859375,
+      "failedRuns": 0
+    },
+    "src/router/trie-router/router.test.ts": {
+      "ms": 21.11279296875,
+      "failedRuns": 0
+    },
+    "src/types.test.ts": {
+      "ms": 36.029541015625,
+      "failedRuns": 0
+    },
+    "src/utils/accept.test.ts": {
+      "ms": 47.105224609375,
+      "failedRuns": 0
+    },
+    "src/utils/basic-auth.test.ts": {
+      "ms": 55.8876953125,
+      "failedRuns": 0
+    },
+    "src/utils/body.test.ts": {
+      "ms": 47.08837890625,
+      "failedRuns": 0
+    },
+    "src/utils/buffer.test.ts": {
+      "ms": 18.266357421875,
+      "failedRuns": 0
+    },
+    "src/utils/color.test.ts": {
+      "ms": 46.553466796875,
+      "failedRuns": 0
+    },
+    "src/utils/concurrent.test.ts": {
+      "ms": 143.503173828125,
+      "failedRuns": 0
+    },
+    "src/utils/cookie.test.ts": {
+      "ms": 20.086669921875,
+      "failedRuns": 0
+    },
+    "src/utils/crypto.test.ts": {
+      "ms": 7.179931640625,
+      "failedRuns": 0
+    },
+    "src/utils/encode.test.ts": {
+      "ms": 8.0703125,
+      "failedRuns": 0
+    },
+    "src/utils/filepath.test.ts": {
+      "ms": 2.393310546875,
+      "failedRuns": 0
+    },
+    "src/utils/html.test.ts": {
+      "ms": 1.46240234375,
+      "failedRuns": 0
+    },
+    "src/utils/ipaddr.test.ts": {
+      "ms": 8.0673828125,
+      "failedRuns": 0
+    },
+    "src/utils/jwt/jwa.test.ts": {
+      "ms": 1.7998046875,
+      "failedRuns": 0
+    },
+    "src/utils/jwt/jwt.test.ts": {
+      "ms": 847.733642578125,
+      "failedRuns": 0
+    },
+    "src/utils/mime.test.ts": {
+      "ms": 3.20751953125,
+      "failedRuns": 0
+    },
+    "src/utils/mount.test.ts": {
+      "ms": 45.193359375,
+      "failedRuns": 0
+    },
+    "src/utils/stream.test.ts": {
+      "ms": 17.82666015625,
+      "failedRuns": 0
+    },
+    "src/utils/types.test.ts": {
+      "ms": 6.07470703125,
+      "failedRuns": 0
+    },
+    "src/utils/url.test.ts": {
+      "ms": 32.29443359375,
+      "failedRuns": 0
+    },
+    "src/validator/utils.test.ts": {
+      "ms": 2.095458984375,
+      "failedRuns": 0
+    },
+    "src/validator/validator.test.ts": {
+      "ms": 31.314453125,
+      "failedRuns": 0
+    }
+  }
+}

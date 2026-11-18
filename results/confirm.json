@@ -1,0 +1,1350 @@
+{
+  "3": [
+    "src/hono.test.ts",
+    "src/request.test.ts",
+    "src/utils/url.test.ts",
+    "src/validator/validator.test.ts"
+  ],
+  "4": [
+    "src/middleware/timing/index.test.ts"
+  ],
+  "5": [
+    "src/middleware/bearer-auth/index.test.ts"
+  ],
+  "7": [
+    "src/utils/accept.test.ts"
+  ],
+  "8": [
+    "src/adapter/cloudflare-workers/serve-static.test.ts",
+    "src/middleware/serve-static/index.test.ts",
+    "src/middleware/serve-static/path.test.ts"
+  ],
+  "9": [
+    "src/utils/jwt/jwt.test.ts"
+  ],
+  "10": [
+    "src/helper/cookie/index.test.ts"
+  ],
+  "12": [
+    "src/middleware/ip-restriction/index.test.ts"
+  ],
+  "13": [
+    "src/hono.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/router/smart-router/router.test.ts",
+    "src/router/trie-router/node.test.ts",
+    "src/router/trie-router/router.test.ts"
+  ],
+  "14": [
+    "src/middleware/secure-headers/index.test.ts"
+  ],
+  "15": [
+    "src/middleware/cors/index.test.ts"
+  ],
+  "17": [
+    "src/helper/ssg/ssg.test.tsx",
+    "src/helper/ssg/utils.test.ts"
+  ],
+  "19": [
+    "src/utils/ipaddr.test.ts"
+  ],
+  "21": [
+    "src/hono.test.ts",
+    "src/types.test.ts",
+    "src/validator/validator.test.ts",
+    "src/utils/mount.test.ts",
+    "src/utils/url.test.ts",
+    "src/adapter/aws-lambda/handler.test.ts",
+    "src/adapter/cloudflare-workers/serve-static.test.ts",
+    "src/adapter/cloudflare-pages/handler.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts",
+    "src/adapter/vercel/handler.test.ts",
+    "src/helper/accepts/accepts.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/helper/css/index.test.tsx",
+    "src/helper/dev/index.test.ts",
+    "src/helper/route/index.test.ts",
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx",
+    "src/helper/testing/index.test.ts",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/bearer-auth/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/context-storage/index.test.ts",
+    "src/middleware/compress/index.test.ts",
+    "src/middleware/cors/index.test.ts",
+    "src/middleware/csrf/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/logger/index.test.ts",
+    "src/middleware/language/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/powered-by/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/middleware/pretty-json/index.test.ts",
+    "src/middleware/request-id/index.test.ts",
+    "src/middleware/secure-headers/index.test.ts",
+    "src/middleware/serve-static/index.test.ts",
+    "src/middleware/timeout/index.test.ts",
+    "src/middleware/timing/index.test.ts",
+    "src/middleware/trailing-slash/index.test.ts"
+  ],
+  "22": [
+    "src/hono.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts",
+    "src/router/smart-router/router.test.ts"
+  ],
+  "23": [
+    "src/router/linear-router/router.test.ts"
+  ],
+  "26": [
+    "src/middleware/language/index.test.ts"
+  ],
+  "27": [
+    "src/middleware/compress/index.test.ts"
+  ],
+  "28": [
+    "src/router/reg-exp-router/prepared-router.test.ts"
+  ],
+  "29": [
+    "src/hono.test.ts",
+    "src/request.test.ts",
+    "src/validator/validator.test.ts",
+    "src/utils/url.test.ts"
+  ],
+  "30": [
+    "src/middleware/jwk/index.test.ts",
+    "src/utils/jwt/jwt.test.ts"
+  ],
+  "31": [
+    "src/utils/jwt/jwt.test.ts"
+  ],
+  "32": [
+    "src/hono.test.ts",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/cors/index.test.ts",
+    "src/middleware/bearer-auth/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/powered-by/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/router/smart-router/router.test.ts",
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts"
+  ],
+  "33": [
+    "src/utils/accept.test.ts"
+  ],
+  "35": [
+    "src/utils/ipaddr.test.ts",
+    "src/middleware/ip-restriction/index.test.ts"
+  ],
+  "36": [
+    "src/helper/proxy/index.test.ts"
+  ],
+  "37": [
+    "src/middleware/compress/index.test.ts"
+  ],
+  "39": [
+    "src/client/client.test.ts",
+    "src/client/types.test.ts",
+    "src/client/utils.test.ts",
+    "src/helper/factory/index.test.ts",
+    "src/helper/testing/index.test.ts"
+  ],
+  "40": [
+    "src/middleware/bearer-auth/index.test.ts"
+  ],
+  "41": [
+    "src/middleware/ip-restriction/index.test.ts"
+  ],
+  "42": [
+    "src/middleware/ip-restriction/index.test.ts"
+  ],
+  "43": [
+    "src/middleware/secure-headers/index.test.ts"
+  ],
+  "44": [
+    "src/client/client.test.ts"
+  ],
+  "46": [
+    "src/router/trie-router/node.test.ts",
+    "src/router/trie-router/router.test.ts"
+  ],
+  "47": [
+    "src/helper/route/index.test.ts"
+  ],
+  "49": [
+    "src/middleware/jwk/index.test.ts"
+  ],
+  "50": [
+    "src/middleware/timing/index.test.ts"
+  ],
+  "51": [
+    "src/client/client.test.ts"
+  ],
+  "52": [
+    "src/utils/accept.test.ts"
+  ],
+  "53": [
+    "src/middleware/jwk/index.test.ts"
+  ],
+  "55": [
+    "src/middleware/secure-headers/index.test.ts"
+  ],
+  "56": [
+    "src/utils/cookie.test.ts",
+    "src/helper/cookie/index.test.ts"
+  ],
+  "57": [
+    "src/adapter/aws-lambda/handler.test.ts"
+  ],
+  "59": [
+    "src/utils/buffer.test.ts"
+  ],
+  "60": [
+    "src/middleware/cache/index.test.ts"
+  ],
+  "61": [
+    "src/client/client.test.ts",
+    "src/client/utils.test.ts"
+  ],
+  "62": [
+    "src/helper/ssg/plugins.test.tsx"
+  ],
+  "63": [
+    "src/hono.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/router/trie-router/node.test.ts",
+    "src/router/trie-router/router.test.ts",
+    "src/router/smart-router/router.test.ts"
+  ],
+  "64": [
+    "src/helper/route/index.test.ts"
+  ],
+  "65": [
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts",
+    "src/utils/jwt/jwt.test.ts"
+  ],
+  "66": [
+    "src/context.test.ts",
+    "src/client/client.test.ts",
+    "src/utils/cookie.test.ts",
+    "src/adapter/aws-lambda/handler.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts",
+    "src/helper/cookie/index.test.ts"
+  ],
+  "67": [
+    "src/client/client.test.ts"
+  ],
+  "68": [
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx"
+  ],
+  "70": [
+    "src/helper/streaming/sse.test.tsx",
+    "src/middleware/compress/index.test.ts"
+  ],
+  "71": [
+    "src/hono.test.ts",
+    "src/utils/url.test.ts",
+    "src/helper/route/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/router/smart-router/router.test.ts",
+    "src/router/trie-router/node.test.ts",
+    "src/router/trie-router/router.test.ts"
+  ],
+  "72": [
+    "src/middleware/method-not-allowed/index.test.ts"
+  ],
+  "74": [
+    "src/compose.test.ts",
+    "src/context.test.ts",
+    "src/hono.test.ts",
+    "src/types.test.ts",
+    "src/client/client.test.ts",
+    "src/client/types.test.ts",
+    "src/client/utils.test.ts",
+    "src/jsx/index.test.tsx",
+    "src/jsx/jsx-runtime.test.tsx",
+    "src/preset/quick.test.ts",
+    "src/preset/tiny.test.ts",
+    "src/utils/mount.test.ts",
+    "src/utils/url.test.ts",
+    "src/validator/validator.test.ts",
+    "src/adapter/aws-lambda/conninfo.test.ts",
+    "src/adapter/aws-lambda/handler.test.ts",
+    "src/adapter/bun/conninfo.test.ts",
+    "src/adapter/bun/server.test.ts",
+    "src/adapter/bun/websocket.test.ts",
+    "src/adapter/cloudflare-pages/conninfo.test.ts",
+    "src/adapter/cloudflare-pages/handler.test.ts",
+    "src/adapter/cloudflare-workers/conninfo.test.ts",
+    "src/adapter/cloudflare-workers/serve-static.test.ts",
+    "src/adapter/cloudflare-workers/websocket.test.ts",
+    "src/adapter/deno/conninfo.test.ts",
+    "src/adapter/deno/websocket.test.ts",
+    "src/adapter/lambda-edge/conninfo.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts",
+    "src/adapter/netlify/conninfo.test.ts",
+    "src/adapter/service-worker/handler.test.ts",
+    "src/helper/accepts/accepts.test.ts",
+    "src/adapter/vercel/conninfo.test.ts",
+    "src/adapter/vercel/handler.test.ts",
+    "src/helper/adapter/index.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/helper/css/index.test.tsx",
+    "src/helper/dev/index.test.ts",
+    "src/helper/factory/index.test.ts",
+    "src/helper/proxy/index.test.ts",
+    "src/helper/route/index.test.ts",
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx",
+    "src/helper/streaming/sse.test.tsx",
+    "src/helper/streaming/stream.test.ts",
+    "src/helper/streaming/text.test.ts",
+    "src/helper/testing/index.test.ts",
+    "src/helper/websocket/index.test.ts",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/bearer-auth/index.test.ts",
+    "src/middleware/body-limit/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/compress/index.test.ts",
+    "src/middleware/context-storage/index.test.ts",
+    "src/middleware/cors/index.test.ts",
+    "src/middleware/csrf/index.test.ts",
+    "src/middleware/ip-restriction/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/language/index.test.ts",
+    "src/middleware/logger/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/middleware/powered-by/index.test.ts",
+    "src/middleware/pretty-json/index.test.ts",
+    "src/middleware/secure-headers/index.test.ts",
+    "src/middleware/request-id/index.test.ts",
+    "src/middleware/serve-static/index.test.ts",
+    "src/middleware/timeout/index.test.ts",
+    "src/middleware/timing/index.test.ts",
+    "src/middleware/trailing-slash/index.test.ts"
+  ],
+  "75": [
+    "src/middleware/secure-headers/index.test.ts"
+  ],
+  "76": [
+    "src/middleware/secure-headers/index.test.ts"
+  ],
+  "77": [
+    "src/middleware/secure-headers/index.test.ts"
+  ],
+  "78": [
+    "src/hono.test.ts",
+    "src/utils/url.test.ts",
+    "src/helper/route/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/router/smart-router/router.test.ts",
+    "src/router/trie-router/node.test.ts",
+    "src/router/trie-router/router.test.ts"
+  ],
+  "79": [
+    "src/router/reg-exp-router/prepared-router.test.ts"
+  ],
+  "80": [
+    "src/middleware/trailing-slash/index.test.ts"
+  ],
+  "81": [
+    "src/hono.test.ts",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/powered-by/index.test.ts",
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts",
+    "src/router/smart-router/router.test.ts"
+  ],
+  "82": [
+    "src/helper/streaming/sse.test.tsx"
+  ],
+  "83": [
+    "src/hono.test.ts",
+    "src/router/reg-exp-router/router.test.ts",
+    "src/router/smart-router/router.test.ts"
+  ],
+  "84": [
+    "src/compose.test.ts",
+    "src/context.test.ts",
+    "src/hono.test.ts",
+    "src/client/client.test.ts",
+    "src/jsx/index.test.tsx",
+    "src/jsx/jsx-runtime.test.tsx",
+    "src/validator/validator.test.ts",
+    "src/adapter/aws-lambda/handler.test.ts",
+    "src/adapter/cloudflare-pages/handler.test.ts",
+    "src/adapter/cloudflare-workers/serve-static.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts",
+    "src/adapter/service-worker/handler.test.ts",
+    "src/helper/accepts/accepts.test.ts",
+    "src/adapter/vercel/handler.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/helper/css/index.test.tsx",
+    "src/helper/route/index.test.ts",
+    "src/helper/testing/index.test.ts",
+    "src/helper/streaming/sse.test.tsx",
+    "src/helper/streaming/stream.test.ts",
+    "src/helper/streaming/text.test.ts",
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/bearer-auth/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/compress/index.test.ts",
+    "src/middleware/cors/index.test.ts",
+    "src/middleware/csrf/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/language/index.test.ts",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/pretty-json/index.test.ts",
+    "src/middleware/request-id/index.test.ts",
+    "src/middleware/serve-static/index.test.ts"
+  ],
+  "85": [
+    "src/hono.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/router/smart-router/router.test.ts",
+    "src/router/trie-router/node.test.ts",
+    "src/router/trie-router/router.test.ts"
+  ],
+  "86": [
+    "src/client/client.test.ts"
+  ],
+  "87": [
+    "src/hono.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/router/smart-router/router.test.ts",
+    "src/router/trie-router/router.test.ts"
+  ],
+  "88": [
+    "src/utils/stream.test.ts"
+  ],
+  "89": [
+    "src/middleware/mount/index.test.ts"
+  ],
+  "91": [
+    "src/hono.test.ts",
+    "src/utils/mount.test.ts"
+  ],
+  "92": [
+    "src/hono.test.ts",
+    "src/middleware/mount/index.test.ts"
+  ],
+  "93": [
+    "src/helper/streaming/sse.test.tsx",
+    "src/helper/streaming/stream.test.ts"
+  ],
+  "95": [
+    "src/utils/ipaddr.test.ts",
+    "src/middleware/ip-restriction/index.test.ts"
+  ],
+  "96": [
+    "src/utils/ipaddr.test.ts",
+    "src/middleware/ip-restriction/index.test.ts"
+  ],
+  "97": [
+    "src/compose.test.ts",
+    "src/hono.test.ts",
+    "src/adapter/service-worker/handler.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/mount/index.test.ts"
+  ],
+  "98": [
+    "src/jsx/index.test.tsx",
+    "src/jsx/jsx-runtime.test.tsx",
+    "src/helper/css/index.test.tsx",
+    "src/helper/html/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx"
+  ],
+  "99": [
+    "src/utils/mime.test.ts",
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx"
+  ],
+  "100": [
+    "src/hono.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts",
+    "src/router/smart-router/router.test.ts"
+  ],
+  "101": [
+    "src/utils/url.test.ts"
+  ],
+  "102": [
+    "src/middleware/request-id/index.test.ts"
+  ],
+  "103": [
+    "src/router/linear-router/router.test.ts"
+  ],
+  "104": [
+    "src/middleware/csrf/index.test.ts"
+  ],
+  "105": [
+    "src/compose.test.ts",
+    "src/context.test.ts",
+    "src/hono.test.ts",
+    "src/jsx/index.test.tsx",
+    "src/validator/validator.test.ts",
+    "src/utils/mount.test.ts",
+    "src/adapter/aws-lambda/handler.test.ts",
+    "src/adapter/cloudflare-workers/serve-static.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts",
+    "src/adapter/cloudflare-pages/handler.test.ts",
+    "src/adapter/service-worker/handler.test.ts",
+    "src/helper/accepts/accepts.test.ts",
+    "src/helper/css/index.test.tsx",
+    "src/helper/proxy/index.test.ts",
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx",
+    "src/middleware/bearer-auth/index.test.ts",
+    "src/middleware/body-limit/index.test.ts",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/compress/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/csrf/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/middleware/ip-restriction/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/logger/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/middleware/pretty-json/index.test.ts",
+    "src/middleware/timeout/index.test.ts",
+    "src/middleware/serve-static/index.test.ts",
+    "src/middleware/timing/index.test.ts",
+    "src/middleware/trailing-slash/index.test.ts"
+  ],
+  "106": [
+    "src/middleware/jwk/index.test.ts",
+    "src/utils/jwt/jwt.test.ts"
+  ],
+  "108": [
+    "src/middleware/timing/index.test.ts"
+  ],
+  "111": [
+    "src/hono.test.ts",
+    "src/helper/factory/index.test.ts",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/compress/index.test.ts",
+    "src/middleware/context-storage/index.test.ts",
+    "src/middleware/cors/index.test.ts",
+    "src/middleware/csrf/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/language/index.test.ts",
+    "src/middleware/logger/index.test.ts",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/middleware/powered-by/index.test.ts",
+    "src/middleware/pretty-json/index.test.ts",
+    "src/middleware/request-id/index.test.ts",
+    "src/middleware/secure-headers/index.test.ts",
+    "src/middleware/serve-static/index.test.ts",
+    "src/middleware/timing/index.test.ts",
+    "src/middleware/trailing-slash/index.test.ts",
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts",
+    "src/router/smart-router/router.test.ts"
+  ],
+  "112": [
+    "src/jsx/index.test.tsx",
+    "src/jsx/jsx-runtime.test.tsx",
+    "src/jsx/streaming.test.tsx",
+    "src/helper/css/index.test.tsx",
+    "src/helper/streaming/sse.test.tsx",
+    "src/middleware/jsx-renderer/index.test.tsx"
+  ],
+  "113": [
+    "src/utils/basic-auth.test.ts",
+    "src/middleware/basic-auth/index.test.ts"
+  ],
+  "114": [
+    "src/utils/accept.test.ts"
+  ],
+  "116": [
+    "src/hono.test.ts",
+    "src/router/smart-router/router.test.ts",
+    "src/router/trie-router/node.test.ts",
+    "src/router/trie-router/router.test.ts"
+  ],
+  "117": [
+    "src/client/client.test.ts",
+    "src/helper/factory/index.test.ts",
+    "src/helper/testing/index.test.ts"
+  ],
+  "118": [
+    "src/utils/mount.test.ts",
+    "src/middleware/mount/index.test.ts"
+  ],
+  "119": [
+    "src/router/linear-router/router.test.ts"
+  ],
+  "120": [
+    "src/middleware/request-id/index.test.ts"
+  ],
+  "121": [
+    "src/middleware/bearer-auth/index.test.ts"
+  ],
+  "122": [
+    "src/utils/color.test.ts",
+    "src/helper/dev/index.test.ts",
+    "src/middleware/logger/index.test.ts"
+  ],
+  "123": [
+    "src/middleware/jsx-renderer/index.test.tsx"
+  ],
+  "124": [
+    "src/utils/accept.test.ts",
+    "src/helper/accepts/accepts.test.ts",
+    "src/middleware/compress/index.test.ts",
+    "src/middleware/serve-static/index.test.ts"
+  ],
+  "125": [
+    "src/middleware/bearer-auth/index.test.ts"
+  ],
+  "126": [
+    "src/utils/cookie.test.ts",
+    "src/adapter/cloudflare-pages/handler.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/middleware/language/index.test.ts",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts"
+  ],
+  "127": [
+    "src/middleware/etag/index.test.ts"
+  ],
+  "129": [
+    "src/jsx/index.test.tsx",
+    "src/jsx/jsx-runtime.test.tsx",
+    "src/helper/css/index.test.tsx",
+    "src/helper/html/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx"
+  ],
+  "130": [
+    "src/middleware/jwt/index.test.ts"
+  ],
+  "131": [
+    "src/middleware/jwk/index.test.ts",
+    "src/utils/jwt/jwt.test.ts"
+  ],
+  "132": [
+    "src/hono.test.ts",
+    "src/router/smart-router/router.test.ts",
+    "src/router/trie-router/node.test.ts",
+    "src/router/trie-router/router.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts"
+  ],
+  "133": [
+    "src/middleware/csrf/index.test.ts"
+  ],
+  "134": [
+    "src/adapter/aws-lambda/handler.test.ts"
+  ],
+  "135": [
+    "src/request.test.ts",
+    "src/validator/validator.test.ts"
+  ],
+  "136": [
+    "src/hono.test.ts",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/cors/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/powered-by/index.test.ts",
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts",
+    "src/router/smart-router/router.test.ts"
+  ],
+  "137": [
+    "src/hono.test.ts",
+    "src/middleware/logger/index.test.ts"
+  ],
+  "138": [
+    "src/middleware/compress/index.test.ts"
+  ],
+  "141": [
+    "src/middleware/compress/index.test.ts"
+  ],
+  "142": [
+    "src/helper/css/index.test.tsx",
+    "src/jsx/dom/css.test.tsx"
+  ],
+  "143": [
+    "src/utils/body.test.ts"
+  ],
+  "145": [
+    "src/context.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/adapter/aws-lambda/handler.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts"
+  ],
+  "147": [
+    "src/middleware/trailing-slash/index.test.ts"
+  ],
+  "148": [
+    "src/router/linear-router/router.test.ts"
+  ],
+  "149": [
+    "src/context.test.ts",
+    "src/client/client.test.ts",
+    "src/utils/cookie.test.ts",
+    "src/adapter/aws-lambda/handler.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts"
+  ],
+  "150": [
+    "src/middleware/method-not-allowed/index.test.ts"
+  ],
+  "151": [
+    "src/middleware/ip-restriction/index.test.ts"
+  ],
+  "152": [
+    "src/middleware/csrf/index.test.ts"
+  ],
+  "154": [
+    "src/client/client.test.ts",
+    "src/validator/validator.test.ts",
+    "src/utils/cookie.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/language/index.test.ts",
+    "src/adapter/cloudflare-pages/handler.test.ts"
+  ],
+  "156": [
+    "src/context.test.ts"
+  ],
+  "158": [
+    "src/middleware/trailing-slash/index.test.ts"
+  ],
+  "159": [
+    "src/hono.test.ts",
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts",
+    "src/router/smart-router/router.test.ts"
+  ],
+  "160": [
+    "src/middleware/combine/index.test.ts"
+  ],
+  "161": [
+    "src/router/linear-router/router.test.ts"
+  ],
+  "162": [
+    "src/helper/streaming/sse.test.tsx",
+    "src/helper/streaming/stream.test.ts",
+    "src/helper/streaming/text.test.ts",
+    "src/middleware/compress/index.test.ts"
+  ],
+  "163": [
+    "src/middleware/trailing-slash/index.test.ts"
+  ],
+  "164": [
+    "src/middleware/combine/index.test.ts"
+  ],
+  "165": [
+    "src/middleware/serve-static/index.test.ts",
+    "src/middleware/serve-static/path.test.ts",
+    "src/adapter/cloudflare-workers/serve-static.test.ts"
+  ],
+  "166": [
+    "src/utils/mime.test.ts",
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx"
+  ],
+  "167": [
+    "src/router/linear-router/router.test.ts"
+  ],
+  "168": [
+    "src/middleware/mount/index.test.ts"
+  ],
+  "169": [
+    "src/hono.test.ts",
+    "src/middleware/bearer-auth/index.test.ts",
+    "src/middleware/csrf/index.test.ts",
+    "src/middleware/ip-restriction/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/middleware/powered-by/index.test.ts",
+    "src/middleware/serve-static/index.test.ts",
+    "src/router/smart-router/router.test.ts",
+    "src/router/reg-exp-router/router.test.ts"
+  ],
+  "170": [
+    "src/middleware/trailing-slash/index.test.ts"
+  ],
+  "171": [
+    "src/adapter/lambda-edge/handler.test.ts"
+  ],
+  "172": [
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts"
+  ],
+  "173": [
+    "src/helper/accepts/accepts.test.ts"
+  ],
+  "174": [
+    "src/middleware/method-not-allowed/index.test.ts"
+  ],
+  "175": [
+    "src/middleware/jwk/index.test.ts"
+  ],
+  "176": [
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx"
+  ],
+  "177": [
+    "src/helper/ssg/utils.test.ts"
+  ],
+  "178": [
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx",
+    "src/helper/ssg/utils.test.ts"
+  ],
+  "179": [
+    "src/adapter/lambda-edge/handler.test.ts"
+  ],
+  "180": [
+    "src/middleware/jsx-renderer/index.test.tsx"
+  ],
+  "182": [
+    "src/hono.test.ts",
+    "src/request.test.ts",
+    "src/types.test.ts"
+  ],
+  "184": [
+    "src/helper/css/index.test.tsx"
+  ],
+  "185": [
+    "src/adapter/cloudflare-workers/serve-static.test.ts",
+    "src/middleware/serve-static/index.test.ts",
+    "src/middleware/serve-static/path.test.ts"
+  ],
+  "186": [],
+  "187": [
+    "src/helper/css/index.test.tsx"
+  ],
+  "188": [
+    "src/middleware/compress/index.test.ts"
+  ],
+  "189": [
+    "src/client/client.test.ts",
+    "src/utils/body.test.ts"
+  ],
+  "190": [
+    "src/middleware/ip-restriction/index.test.ts"
+  ],
+  "191": [
+    "src/hono.test.ts",
+    "src/types.test.ts",
+    "src/jsx/index.test.tsx",
+    "src/jsx/jsx-runtime.test.tsx",
+    "src/validator/validator.test.ts",
+    "src/utils/mount.test.ts",
+    "src/utils/url.test.ts",
+    "src/adapter/aws-lambda/handler.test.ts",
+    "src/adapter/cloudflare-pages/handler.test.ts",
+    "src/adapter/cloudflare-workers/serve-static.test.ts",
+    "src/adapter/cloudflare-workers/websocket.test.ts",
+    "src/adapter/deno/websocket.test.ts",
+    "src/client/client.test.ts",
+    "src/client/types.test.ts",
+    "src/adapter/service-worker/handler.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts",
+    "src/helper/accepts/accepts.test.ts",
+    "src/adapter/vercel/handler.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/helper/css/index.test.tsx",
+    "src/helper/factory/index.test.ts",
+    "src/helper/proxy/index.test.ts",
+    "src/helper/route/index.test.ts",
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx",
+    "src/helper/testing/index.test.ts",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/body-limit/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/bearer-auth/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/compress/index.test.ts",
+    "src/middleware/context-storage/index.test.ts",
+    "src/middleware/csrf/index.test.ts",
+    "src/middleware/cors/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/middleware/ip-restriction/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/logger/index.test.ts",
+    "src/middleware/language/index.test.ts",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/secure-headers/index.test.ts",
+    "src/middleware/serve-static/index.test.ts",
+    "src/middleware/pretty-json/index.test.ts",
+    "src/middleware/request-id/index.test.ts",
+    "src/middleware/powered-by/index.test.ts",
+    "src/middleware/timeout/index.test.ts",
+    "src/middleware/trailing-slash/index.test.ts",
+    "src/middleware/timing/index.test.ts",
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts",
+    "src/router/smart-router/router.test.ts"
+  ],
+  "192": [
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts"
+  ],
+  "194": [
+    "src/helper/ssg/utils.test.ts"
+  ],
+  "196": [
+    "src/context.test.ts",
+    "src/adapter/aws-lambda/handler.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts",
+    "src/helper/cookie/index.test.ts"
+  ],
+  "198": [
+    "src/router/reg-exp-router/prepared-router.test.ts"
+  ],
+  "199": [
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx"
+  ],
+  "200": [
+    "src/middleware/combine/index.test.ts"
+  ],
+  "201": [
+    "src/middleware/trailing-slash/index.test.ts"
+  ],
+  "202": [
+    "src/middleware/compress/index.test.ts"
+  ],
+  "203": [
+    "src/helper/css/index.test.tsx"
+  ],
+  "205": [
+    "src/router/reg-exp-router/prepared-router.test.ts"
+  ],
+  "207": [
+    "src/middleware/bearer-auth/index.test.ts"
+  ],
+  "208": [
+    "src/helper/proxy/index.test.ts"
+  ],
+  "210": [
+    "src/middleware/body-limit/index.test.ts"
+  ],
+  "212": [
+    "src/middleware/method-override/index.test.ts"
+  ],
+  "213": [
+    "src/helper/css/index.test.tsx"
+  ],
+  "214": [
+    "src/jsx/index.test.tsx",
+    "src/jsx/jsx-runtime.test.tsx",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/helper/css/index.test.tsx",
+    "src/helper/html/index.test.ts"
+  ],
+  "216": [
+    "src/middleware/method-override/index.test.ts"
+  ],
+  "217": [
+    "src/middleware/ip-restriction/index.test.ts"
+  ],
+  "218": [
+    "src/adapter/cloudflare-workers/websocket.test.ts"
+  ],
+  "219": [
+    "src/jsx/index.test.tsx",
+    "src/jsx/jsx-runtime.test.tsx",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/helper/css/index.test.tsx",
+    "src/helper/html/index.test.ts",
+    "src/helper/ssg/plugins.test.tsx"
+  ],
+  "220": [
+    "src/middleware/combine/index.test.ts"
+  ],
+  "221": [
+    "src/middleware/jwk/index.test.ts"
+  ],
+  "222": [
+    "src/compose.test.ts",
+    "src/context.test.ts",
+    "src/hono.test.ts",
+    "src/types.test.ts",
+    "src/client/client.test.ts",
+    "src/validator/validator.test.ts",
+    "src/adapter/cloudflare-workers/serve-static.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts",
+    "src/adapter/service-worker/handler.test.ts",
+    "src/helper/accepts/accepts.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/helper/factory/index.test.ts",
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx",
+    "src/helper/streaming/sse.test.tsx",
+    "src/helper/streaming/text.test.ts",
+    "src/middleware/bearer-auth/index.test.ts",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/body-limit/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/compress/index.test.ts",
+    "src/middleware/context-storage/index.test.ts",
+    "src/middleware/cors/index.test.ts",
+    "src/middleware/csrf/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/adapter/aws-lambda/handler.test.ts",
+    "src/utils/mount.test.ts",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/logger/index.test.ts",
+    "src/middleware/language/index.test.ts",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/request-id/index.test.ts",
+    "src/middleware/secure-headers/index.test.ts",
+    "src/middleware/serve-static/index.test.ts",
+    "src/middleware/timeout/index.test.ts",
+    "src/middleware/timing/index.test.ts",
+    "src/middleware/trailing-slash/index.test.ts",
+    "src/middleware/pretty-json/index.test.ts"
+  ],
+  "223": [
+    "src/middleware/pretty-json/index.test.ts"
+  ],
+  "224": [
+    "src/helper/accepts/accepts.test.ts"
+  ],
+  "225": [
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts",
+    "src/utils/jwt/jwt.test.ts"
+  ],
+  "228": [
+    "src/jsx/jsx-runtime.test.tsx",
+    "src/helper/html/index.test.ts",
+    "src/helper/css/index.test.tsx"
+  ],
+  "229": [
+    "src/adapter/bun/websocket.test.ts",
+    "src/adapter/cloudflare-workers/websocket.test.ts",
+    "src/adapter/deno/websocket.test.ts",
+    "src/helper/websocket/index.test.ts"
+  ],
+  "230": [
+    "src/middleware/cache/index.test.ts"
+  ],
+  "231": [
+    "src/middleware/cache/index.test.ts"
+  ],
+  "232": [
+    "src/adapter/lambda-edge/handler.test.ts"
+  ],
+  "234": [
+    "src/middleware/cache/index.test.ts"
+  ],
+  "235": [
+    "src/middleware/cache/index.test.ts"
+  ],
+  "236": [
+    "src/compose.test.ts"
+  ],
+  "237": [
+    "src/middleware/serve-static/index.test.ts"
+  ],
+  "239": [
+    "src/middleware/timeout/index.test.ts"
+  ],
+  "241": [
+    "src/middleware/jsx-renderer/index.test.tsx"
+  ],
+  "243": [
+    "src/hono.test.ts",
+    "src/helper/route/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts"
+  ],
+  "244": [
+    "src/helper/accepts/accepts.test.ts"
+  ],
+  "245": [
+    "src/adapter/cloudflare-pages/handler.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/language/index.test.ts"
+  ],
+  "247": [
+    "src/compose.test.ts",
+    "src/hono.test.ts",
+    "src/client/client.test.ts",
+    "src/validator/validator.test.ts",
+    "src/helper/factory/index.test.ts",
+    "src/middleware/body-limit/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/ip-restriction/index.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/timing/index.test.ts",
+    "src/middleware/serve-static/index.test.ts"
+  ],
+  "248": [
+    "src/middleware/combine/index.test.ts"
+  ],
+  "249": [
+    "src/adapter/cloudflare-pages/handler.test.ts",
+    "src/helper/cookie/index.test.ts",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/language/index.test.ts"
+  ],
+  "250": [
+    "src/utils/body.test.ts"
+  ],
+  "251": [
+    "src/utils/concurrent.test.ts"
+  ],
+  "252": [
+    "src/hono.test.ts",
+    "src/utils/mount.test.ts",
+    "src/validator/validator.test.ts",
+    "src/adapter/vercel/handler.test.ts",
+    "src/helper/proxy/index.test.ts",
+    "src/helper/route/index.test.ts",
+    "src/helper/ssg/ssg.test.tsx",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts",
+    "src/router/smart-router/router.test.ts"
+  ],
+  "253": [
+    "src/middleware/method-not-allowed/index.test.ts"
+  ],
+  "254": [
+    "src/adapter/aws-lambda/conninfo.test.ts"
+  ],
+  "256": [
+    "src/utils/stream.test.ts",
+    "src/helper/streaming/sse.test.tsx",
+    "src/helper/streaming/stream.test.ts"
+  ],
+  "257": [
+    "src/hono.test.ts",
+    "src/utils/mount.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/language/index.test.ts",
+    "src/middleware/trailing-slash/index.test.ts"
+  ],
+  "259": [
+    "src/middleware/method-override/index.test.ts"
+  ],
+  "262": [
+    "src/helper/accepts/accepts.test.ts"
+  ],
+  "264": [
+    "src/middleware/etag/index.test.ts"
+  ],
+  "265": [
+    "src/adapter/lambda-edge/handler.test.ts"
+  ],
+  "266": [
+    "src/helper/css/index.test.tsx"
+  ],
+  "268": [
+    "src/adapter/lambda-edge/handler.test.ts"
+  ],
+  "269": [
+    "src/types.test.ts",
+    "src/client/client.test.ts",
+    "src/client/types.test.ts",
+    "src/client/utils.test.ts",
+    "src/helper/testing/index.test.ts"
+  ],
+  "270": [
+    "src/helper/ssg/plugins.test.tsx",
+    "src/helper/ssg/ssg.test.tsx"
+  ],
+  "271": [
+    "src/middleware/timing/index.test.ts"
+  ],
+  "272": [
+    "src/utils/body.test.ts"
+  ],
+  "276": [
+    "src/helper/css/index.test.tsx"
+  ],
+  "277": [
+    "src/middleware/jwt/index.test.ts"
+  ],
+  "278": [
+    "src/adapter/lambda-edge/handler.test.ts"
+  ],
+  "279": [
+    "src/jsx/base.test.tsx",
+    "src/jsx/components.test.tsx",
+    "src/jsx/context-isolation.test.ts",
+    "src/jsx/index.test.tsx",
+    "src/jsx/jsx-runtime.test.tsx",
+    "src/jsx/streaming.test.tsx",
+    "src/helper/css/index.test.tsx",
+    "src/helper/html/index.test.ts",
+    "src/helper/streaming/sse.test.tsx",
+    "src/jsx/intrinsic-element/components.test.tsx",
+    "src/jsx/dom/server.test.tsx",
+    "src/middleware/jsx-renderer/index.test.tsx"
+  ],
+  "280": [
+    "src/middleware/compress/index.test.ts",
+    "src/helper/streaming/sse.test.tsx"
+  ],
+  "281": [
+    "src/middleware/language/index.test.ts"
+  ],
+  "282": [
+    "src/adapter/bun/conninfo.test.ts"
+  ],
+  "283": [
+    "src/middleware/language/index.test.ts"
+  ],
+  "284": [
+    "src/hono.test.ts",
+    "src/utils/mount.test.ts",
+    "src/validator/validator.test.ts",
+    "src/helper/accepts/accepts.test.ts",
+    "src/helper/factory/index.test.ts",
+    "src/helper/ssg/ssg.test.tsx",
+    "src/helper/proxy/index.test.ts",
+    "src/helper/route/index.test.ts",
+    "src/adapter/cloudflare-pages/handler.test.ts",
+    "src/adapter/cloudflare-workers/serve-static.test.ts",
+    "src/adapter/lambda-edge/handler.test.ts",
+    "src/adapter/vercel/handler.test.ts",
+    "src/middleware/basic-auth/index.test.ts",
+    "src/middleware/bearer-auth/index.test.ts",
+    "src/middleware/cache/index.test.ts",
+    "src/middleware/combine/index.test.ts",
+    "src/middleware/compress/index.test.ts",
+    "src/middleware/context-storage/index.test.ts",
+    "src/middleware/cors/index.test.ts",
+    "src/middleware/csrf/index.test.ts",
+    "src/middleware/etag/index.test.ts",
+    "src/middleware/jwk/index.test.ts",
+    "src/middleware/jwt/index.test.ts",
+    "src/middleware/language/index.test.ts",
+    "src/middleware/logger/index.test.ts",
+    "src/middleware/method-override/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/middleware/pretty-json/index.test.ts",
+    "src/middleware/request-id/index.test.ts",
+    "src/middleware/secure-headers/index.test.ts",
+    "src/middleware/serve-static/index.test.ts",
+    "src/middleware/timing/index.test.ts",
+    "src/middleware/trailing-slash/index.test.ts",
+    "src/router/reg-exp-router/prepared-router.test.ts",
+    "src/router/reg-exp-router/router.test.ts",
+    "src/router/smart-router/router.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/jsx-renderer/index.test.tsx"
+  ],
+  "285": [
+    "src/middleware/cors/index.test.ts"
+  ],
+  "287": [
+    "src/helper/route/index.test.ts"
+  ],
+  "289": [
+    "src/hono.test.ts",
+    "src/utils/color.test.ts",
+    "src/helper/dev/index.test.ts",
+    "src/middleware/logger/index.test.ts"
+  ],
+  "290": [
+    "src/helper/streaming/stream.test.ts"
+  ],
+  "291": [
+    "src/compose.test.ts",
+    "src/hono.test.ts",
+    "src/middleware/method-not-allowed/index.test.ts",
+    "src/middleware/mount/index.test.ts",
+    "src/adapter/service-worker/handler.test.ts"
+  ],
+  "292": [
+    "src/router/pattern-router/router.test.ts"
+  ],
+  "293": [
+    "src/middleware/jsx-renderer/index.test.tsx"
+  ],
+  "294": [
+    "src/middleware/body-limit/index.test.ts"
+  ],
+  "295": [
+    "src/middleware/jwk/index.test.ts"
+  ],
+  "296": [
+    "src/utils/body.test.ts"
+  ],
+  "297": [
+    "src/utils/stream.test.ts"
+  ],
+  "299": [
+    "src/adapter/cloudflare-workers/serve-static.test.ts",
+    "src/adapter/cloudflare-workers/utils.test.ts"
+  ]
+}

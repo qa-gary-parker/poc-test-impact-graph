@@ -1,0 +1,19 @@
+{
+  "name": "poc-test-impact-graph",
+  "version": "1.0.0",
+  "description": "Can a code-intelligence graph pick the tests to run for a diff? Measured on hono with seeded faults",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "setup": "bash harness/setup.sh",
+    "mutants": "node harness/mutants.mjs",
+    "baseline": "node harness/baseline.mjs",
+    "mutate": "node harness/mutate.mjs",
+    "confirm": "node harness/confirm.mjs",
+    "select": "node harness/select.mjs",
+    "commits": "node harness/commits.mjs",
+    "summary": "node harness/summary.mjs"
+  }
+}

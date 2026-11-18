@@ -1,0 +1,2408 @@
+{
+  "seed": 6,
+  "perFileCap": 6,
+  "filesScanned": 155,
+  "sites": 1373,
+  "mutants": [
+    {
+      "id": 1,
+      "file": "src/utils/jwt/jwt.ts",
+      "line": 151,
+      "col": 87,
+      "from": " <= ",
+      "to": " < "
+    },
+    {
+      "id": 2,
+      "file": "src/utils/accept.ts",
+      "line": 51,
+      "col": 16,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 3,
+      "file": "src/utils/url.ts",
+      "line": 318,
+      "col": 13,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 4,
+      "file": "src/middleware/timing/timing.ts",
+      "line": 121,
+      "col": 29,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 5,
+      "file": "src/middleware/bearer-auth/index.ts",
+      "line": 136,
+      "col": 42,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 6,
+      "file": "src/middleware/etag/digest.ts",
+      "line": 45,
+      "col": 40,
+      "from": " >= ",
+      "to": " > "
+    },
+    {
+      "id": 7,
+      "file": "src/utils/accept.ts",
+      "line": 89,
+      "col": 43,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 8,
+      "file": "src/middleware/serve-static/path.ts",
+      "line": 7,
+      "col": 37,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 9,
+      "file": "src/utils/jwt/jwt.ts",
+      "line": 151,
+      "col": 39,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 10,
+      "file": "src/helper/cookie/index.ts",
+      "line": 115,
+      "col": 14,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 11,
+      "file": "src/validator/utils.ts",
+      "line": 30,
+      "col": 65,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 12,
+      "file": "src/middleware/ip-restriction/index.ts",
+      "line": 97,
+      "col": 26,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 13,
+      "file": "src/router/trie-router/node.ts",
+      "line": 45,
+      "col": 17,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 14,
+      "file": "src/middleware/secure-headers/secure-headers.ts",
+      "line": 260,
+      "col": 23,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 15,
+      "file": "src/middleware/cors/index.ts",
+      "line": 90,
+      "col": 32,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 16,
+      "file": "src/utils/buffer.ts",
+      "line": 55,
+      "col": 16,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 17,
+      "file": "src/helper/ssg/utils.ts",
+      "line": 28,
+      "col": 25,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 18,
+      "file": "src/utils/jwt/jws.ts",
+      "line": 79,
+      "col": 20,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 19,
+      "file": "src/utils/ipaddr.ts",
+      "line": 112,
+      "col": 46,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 20,
+      "file": "src/adapter/aws-lambda/handler.ts",
+      "line": 422,
+      "col": 31,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 21,
+      "file": "src/utils/url.ts",
+      "line": 196,
+      "col": 69,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 22,
+      "file": "src/router/reg-exp-router/trie.ts",
+      "line": 50,
+      "col": 36,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 23,
+      "file": "src/router/linear-router/router.ts",
+      "line": 89,
+      "col": 39,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 24,
+      "file": "src/router/smart-router/router.ts",
+      "line": 32,
+      "col": 12,
+      "from": " < ",
+      "to": " <= "
+    },
+    {
+      "id": 25,
+      "file": "src/middleware/bearer-auth/index.ts",
+      "line": 212,
+      "col": 71,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 26,
+      "file": "src/middleware/language/language.ts",
+      "line": 58,
+      "col": 14,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 27,
+      "file": "src/middleware/compress/index.ts",
+      "line": 85,
+      "col": 21,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 28,
+      "file": "src/router/reg-exp-router/prepared-router.ts",
+      "line": 113,
+      "col": 13,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 29,
+      "file": "src/utils/url.ts",
+      "line": 309,
+      "col": 14,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 30,
+      "file": "src/utils/jwt/jwt.ts",
+      "line": 122,
+      "col": 10,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 31,
+      "file": "src/utils/jwt/jws.ts",
+      "line": 90,
+      "col": 85,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 32,
+      "file": "src/router/reg-exp-router/router.ts",
+      "line": 31,
+      "col": 91,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 33,
+      "file": "src/utils/accept.ts",
+      "line": 130,
+      "col": 21,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 34,
+      "file": "src/middleware/cache/index.ts",
+      "line": 209,
+      "col": 19,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 35,
+      "file": "src/utils/ipaddr.ts",
+      "line": 112,
+      "col": 57,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 36,
+      "file": "src/helper/proxy/index.ts",
+      "line": 164,
+      "col": 33,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 37,
+      "file": "src/middleware/compress/index.ts",
+      "line": 39,
+      "col": 16,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 38,
+      "file": "src/utils/mount.ts",
+      "line": 8,
+      "col": 14,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 39,
+      "file": "src/client/client.ts",
+      "line": 189,
+      "col": 15,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 40,
+      "file": "src/middleware/bearer-auth/index.ts",
+      "line": 227,
+      "col": 72,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 41,
+      "file": "src/middleware/ip-restriction/index.ts",
+      "line": 165,
+      "col": 11,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 42,
+      "file": "src/middleware/ip-restriction/index.ts",
+      "line": 105,
+      "col": 19,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 43,
+      "file": "src/middleware/secure-headers/secure-headers.ts",
+      "line": 310,
+      "col": 25,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 44,
+      "file": "src/client/client.ts",
+      "line": 109,
+      "col": 18,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 45,
+      "file": "src/utils/ipaddr.ts",
+      "line": 257,
+      "col": 13,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 46,
+      "file": "src/router/trie-router/node.ts",
+      "line": 130,
+      "col": 26,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 47,
+      "file": "src/helper/route/index.ts",
+      "line": 128,
+      "col": 57,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 48,
+      "file": "src/utils/buffer.ts",
+      "line": 56,
+      "col": 11,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 49,
+      "file": "src/middleware/jwk/jwk.ts",
+      "line": 154,
+      "col": 54,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 50,
+      "file": "src/middleware/timing/timing.ts",
+      "line": 164,
+      "col": 30,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 51,
+      "file": "src/client/client.ts",
+      "line": 89,
+      "col": 20,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 52,
+      "file": "src/utils/accept.ts",
+      "line": 132,
+      "col": 20,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 53,
+      "file": "src/middleware/jwk/jwk.ts",
+      "line": 70,
+      "col": 14,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 54,
+      "file": "src/helper/streaming/sse.ts",
+      "line": 19,
+      "col": 89,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 55,
+      "file": "src/middleware/secure-headers/secure-headers.ts",
+      "line": 113,
+      "col": 27,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 56,
+      "file": "src/utils/cookie.ts",
+      "line": 217,
+      "col": 31,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 57,
+      "file": "src/adapter/aws-lambda/handler.ts",
+      "line": 498,
+      "col": 55,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 58,
+      "file": "src/hono-base.ts",
+      "line": 69,
+      "col": 15,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 59,
+      "file": "src/utils/buffer.ts",
+      "line": 26,
+      "col": 9,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 60,
+      "file": "src/middleware/cache/index.ts",
+      "line": 130,
+      "col": 20,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 61,
+      "file": "src/client/utils.ts",
+      "line": 67,
+      "col": 11,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 62,
+      "file": "src/helper/ssg/plugins.ts",
+      "line": 15,
+      "col": 15,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 63,
+      "file": "src/router/trie-router/node.ts",
+      "line": 101,
+      "col": 23,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 64,
+      "file": "src/helper/route/index.ts",
+      "line": 125,
+      "col": 50,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 65,
+      "file": "src/utils/jwt/jws.ts",
+      "line": 229,
+      "col": 24,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 66,
+      "file": "src/utils/cookie.ts",
+      "line": 207,
+      "col": 9,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 67,
+      "file": "src/client/client.ts",
+      "line": 241,
+      "col": 33,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 68,
+      "file": "src/helper/ssg/ssg.ts",
+      "line": 335,
+      "col": 21,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 69,
+      "file": "src/utils/buffer.ts",
+      "line": 91,
+      "col": 16,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 70,
+      "file": "src/helper/streaming/sse.ts",
+      "line": 39,
+      "col": 22,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 71,
+      "file": "src/utils/url.ts",
+      "line": 36,
+      "col": 28,
+      "from": " - 1",
+      "to": " + 1"
+    },
+    {
+      "id": 72,
+      "file": "src/middleware/method-not-allowed/index.ts",
+      "line": 127,
+      "col": 28,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 73,
+      "file": "src/utils/jwt/jwt.ts",
+      "line": 156,
+      "col": 79,
+      "from": " < ",
+      "to": " <= "
+    },
+    {
+      "id": 74,
+      "file": "src/context.ts",
+      "line": 583,
+      "col": 1,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 75,
+      "file": "src/middleware/secure-headers/secure-headers.ts",
+      "line": 245,
+      "col": 34,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 76,
+      "file": "src/middleware/secure-headers/secure-headers.ts",
+      "line": 122,
+      "col": 18,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 77,
+      "file": "src/middleware/secure-headers/secure-headers.ts",
+      "line": 232,
+      "col": 58,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 78,
+      "file": "src/utils/url.ts",
+      "line": 70,
+      "col": 51,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 79,
+      "file": "src/router/reg-exp-router/prepared-router.ts",
+      "line": 63,
+      "col": 17,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 80,
+      "file": "src/middleware/trailing-slash/index.ts",
+      "line": 49,
+      "col": 19,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 81,
+      "file": "src/router/reg-exp-router/router.ts",
+      "line": 31,
+      "col": 48,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 82,
+      "file": "src/helper/streaming/sse.ts",
+      "line": 29,
+      "col": 15,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 83,
+      "file": "src/router/reg-exp-router/node.ts",
+      "line": 105,
+      "col": 18,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 84,
+      "file": "src/context.ts",
+      "line": 616,
+      "col": 19,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 85,
+      "file": "src/router/trie-router/node.ts",
+      "line": 145,
+      "col": 26,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 86,
+      "file": "src/client/client.ts",
+      "line": 138,
+      "col": 67,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 87,
+      "file": "src/router/trie-router/router.ts",
+      "line": 10,
+      "col": 53,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 88,
+      "file": "src/utils/stream.ts",
+      "line": 81,
+      "col": 75,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 89,
+      "file": "src/utils/mount.ts",
+      "line": 37,
+      "col": 27,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 90,
+      "file": "src/utils/cookie.ts",
+      "line": 226,
+      "col": 42,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 91,
+      "file": "src/hono-base.ts",
+      "line": 365,
+      "col": 39,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 92,
+      "file": "src/utils/mount.ts",
+      "line": 65,
+      "col": 16,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 93,
+      "file": "src/helper/streaming/utils.ts",
+      "line": 7,
+      "col": 42,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 94,
+      "file": "src/router/reg-exp-router/trie.ts",
+      "line": 28,
+      "col": 21,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 95,
+      "file": "src/utils/ipaddr.ts",
+      "line": 98,
+      "col": 27,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 96,
+      "file": "src/utils/ipaddr.ts",
+      "line": 203,
+      "col": 14,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 97,
+      "file": "src/compose.ts",
+      "line": 46,
+      "col": 42,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 98,
+      "file": "src/helper/html/index.ts",
+      "line": 28,
+      "col": 30,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 99,
+      "file": "src/utils/mime.ts",
+      "line": 22,
+      "col": 27,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 100,
+      "file": "src/router/reg-exp-router/trie.ts",
+      "line": 47,
+      "col": 37,
+      "from": " >= ",
+      "to": " > "
+    },
+    {
+      "id": 101,
+      "file": "src/utils/url.ts",
+      "line": 174,
+      "col": 22,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 102,
+      "file": "src/middleware/request-id/request-id.ts",
+      "line": 49,
+      "col": 44,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 103,
+      "file": "src/router/linear-router/router.ts",
+      "line": 30,
+      "col": 22,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 104,
+      "file": "src/middleware/csrf/index.ts",
+      "line": 133,
+      "col": 13,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 105,
+      "file": "src/context.ts",
+      "line": 652,
+      "col": 30,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 106,
+      "file": "src/utils/jwt/jwt.ts",
+      "line": 123,
+      "col": 10,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 107,
+      "file": "src/utils/ipaddr.ts",
+      "line": 216,
+      "col": 27,
+      "from": " < ",
+      "to": " <= "
+    },
+    {
+      "id": 108,
+      "file": "src/middleware/timing/timing.ts",
+      "line": 116,
+      "col": 35,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 109,
+      "file": "src/utils/jwt/jws.ts",
+      "line": 102,
+      "col": 72,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 110,
+      "file": "src/utils/mount.ts",
+      "line": 37,
+      "col": 53,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 111,
+      "file": "src/router/reg-exp-router/router.ts",
+      "line": 24,
+      "col": 30,
+      "from": " - 1",
+      "to": " + 1"
+    },
+    {
+      "id": 112,
+      "file": "src/utils/html.ts",
+      "line": 157,
+      "col": 17,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 113,
+      "file": "src/utils/basic-auth.ts",
+      "line": 10,
+      "col": 72,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 114,
+      "file": "src/utils/accept.ts",
+      "line": 115,
+      "col": 57,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 115,
+      "file": "src/helper/streaming/sse.ts",
+      "line": 56,
+      "col": 26,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 116,
+      "file": "src/router/trie-router/node.ts",
+      "line": 80,
+      "col": 25,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 117,
+      "file": "src/client/client.ts",
+      "line": 189,
+      "col": 24,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 118,
+      "file": "src/utils/mount.ts",
+      "line": 24,
+      "col": 16,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 119,
+      "file": "src/router/linear-router/router.ts",
+      "line": 102,
+      "col": 55,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 120,
+      "file": "src/middleware/request-id/request-id.ts",
+      "line": 49,
+      "col": 30,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 121,
+      "file": "src/middleware/bearer-auth/index.ts",
+      "line": 114,
+      "col": 21,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 122,
+      "file": "src/utils/color.ts",
+      "line": 21,
+      "col": 16,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 123,
+      "file": "src/middleware/jsx-renderer/index.ts",
+      "line": 43,
+      "col": 31,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 124,
+      "file": "src/utils/accept.ts",
+      "line": 8,
+      "col": 13,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 125,
+      "file": "src/middleware/bearer-auth/index.ts",
+      "line": 190,
+      "col": 47,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 126,
+      "file": "src/utils/cookie.ts",
+      "line": 125,
+      "col": 20,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 127,
+      "file": "src/middleware/etag/index.ts",
+      "line": 91,
+      "col": 74,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 128,
+      "file": "src/validator/utils.ts",
+      "line": 20,
+      "col": 6,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 129,
+      "file": "src/helper/html/index.ts",
+      "line": 30,
+      "col": 53,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 130,
+      "file": "src/middleware/jwt/jwt.ts",
+      "line": 85,
+      "col": 28,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 131,
+      "file": "src/utils/jwt/jwt.ts",
+      "line": 151,
+      "col": 72,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 132,
+      "file": "src/router/trie-router/node.ts",
+      "line": 127,
+      "col": 29,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 133,
+      "file": "src/middleware/csrf/index.ts",
+      "line": 120,
+      "col": 39,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 134,
+      "file": "src/adapter/aws-lambda/handler.ts",
+      "line": 381,
+      "col": 37,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 135,
+      "file": "src/request.ts",
+      "line": 227,
+      "col": 25,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 136,
+      "file": "src/router/reg-exp-router/router.ts",
+      "line": 26,
+      "col": 20,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 137,
+      "file": "src/middleware/logger/index.ts",
+      "line": 59,
+      "col": 11,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 138,
+      "file": "src/middleware/compress/index.ts",
+      "line": 98,
+      "col": 58,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 139,
+      "file": "src/router/reg-exp-router/node.ts",
+      "line": 45,
+      "col": 18,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 140,
+      "file": "src/utils/buffer.ts",
+      "line": 36,
+      "col": 19,
+      "from": " < ",
+      "to": " <= "
+    },
+    {
+      "id": 141,
+      "file": "src/middleware/compress/index.ts",
+      "line": 119,
+      "col": 17,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 142,
+      "file": "src/helper/css/common.ts",
+      "line": 284,
+      "col": 42,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 143,
+      "file": "src/utils/body.ts",
+      "line": 238,
+      "col": 37,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 144,
+      "file": "src/helper/html/index.ts",
+      "line": 23,
+      "col": 44,
+      "from": " < ",
+      "to": " <= "
+    },
+    {
+      "id": 145,
+      "file": "src/helper/cookie/index.ts",
+      "line": 86,
+      "col": 25,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 146,
+      "file": "src/utils/buffer.ts",
+      "line": 34,
+      "col": 19,
+      "from": " < ",
+      "to": " <= "
+    },
+    {
+      "id": 147,
+      "file": "src/middleware/trailing-slash/index.ts",
+      "line": 48,
+      "col": 48,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 148,
+      "file": "src/router/linear-router/router.ts",
+      "line": 30,
+      "col": 43,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 149,
+      "file": "src/utils/cookie.ts",
+      "line": 217,
+      "col": 16,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 150,
+      "file": "src/middleware/method-not-allowed/index.ts",
+      "line": 68,
+      "col": 21,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 151,
+      "file": "src/middleware/ip-restriction/index.ts",
+      "line": 111,
+      "col": 46,
+      "from": " - 1",
+      "to": " + 1"
+    },
+    {
+      "id": 152,
+      "file": "src/middleware/csrf/index.ts",
+      "line": 118,
+      "col": 39,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 153,
+      "file": "src/helper/ssg/middleware.ts",
+      "line": 17,
+      "col": 51,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 154,
+      "file": "src/utils/cookie.ts",
+      "line": 132,
+      "col": 74,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 155,
+      "file": "src/helper/css/common.ts",
+      "line": 155,
+      "col": 54,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 156,
+      "file": "src/context.ts",
+      "line": 619,
+      "col": 16,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 157,
+      "file": "src/router/reg-exp-router/node.ts",
+      "line": 25,
+      "col": 30,
+      "from": " < ",
+      "to": " <= "
+    },
+    {
+      "id": 158,
+      "file": "src/middleware/trailing-slash/index.ts",
+      "line": 132,
+      "col": 22,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 159,
+      "file": "src/router/reg-exp-router/node.ts",
+      "line": 124,
+      "col": 16,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 160,
+      "file": "src/middleware/combine/index.ts",
+      "line": 115,
+      "col": 20,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 161,
+      "file": "src/router/linear-router/router.ts",
+      "line": 116,
+      "col": 39,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 162,
+      "file": "src/helper/streaming/utils.ts",
+      "line": 3,
+      "col": 37,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 163,
+      "file": "src/middleware/trailing-slash/index.ts",
+      "line": 148,
+      "col": 20,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 164,
+      "file": "src/middleware/combine/index.ts",
+      "line": 112,
+      "col": 20,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 165,
+      "file": "src/middleware/serve-static/path.ts",
+      "line": 24,
+      "col": 27,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 166,
+      "file": "src/utils/mime.ts",
+      "line": 22,
+      "col": 15,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 167,
+      "file": "src/router/linear-router/router.ts",
+      "line": 42,
+      "col": 74,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 168,
+      "file": "src/utils/mount.ts",
+      "line": 42,
+      "col": 28,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 169,
+      "file": "src/router/reg-exp-router/router.ts",
+      "line": 72,
+      "col": 27,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 170,
+      "file": "src/middleware/trailing-slash/index.ts",
+      "line": 66,
+      "col": 24,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 171,
+      "file": "src/adapter/lambda-edge/handler.ts",
+      "line": 176,
+      "col": 22,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 172,
+      "file": "src/router/reg-exp-router/node.ts",
+      "line": 103,
+      "col": 49,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 173,
+      "file": "src/helper/accepts/accepts.ts",
+      "line": 43,
+      "col": 29,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 174,
+      "file": "src/middleware/method-not-allowed/index.ts",
+      "line": 127,
+      "col": 33,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 175,
+      "file": "src/middleware/jwk/jwk.ts",
+      "line": 68,
+      "col": 41,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 176,
+      "file": "src/helper/ssg/ssg.ts",
+      "line": 153,
+      "col": 21,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 177,
+      "file": "src/helper/ssg/utils.ts",
+      "line": 28,
+      "col": 64,
+      "from": " - 1",
+      "to": " + 1"
+    },
+    {
+      "id": 178,
+      "file": "src/helper/ssg/utils.ts",
+      "line": 45,
+      "col": 13,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 179,
+      "file": "src/adapter/lambda-edge/handler.ts",
+      "line": 251,
+      "col": 27,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 180,
+      "file": "src/middleware/jsx-renderer/index.ts",
+      "line": 43,
+      "col": 27,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 181,
+      "file": "src/helper/css/common.ts",
+      "line": 244,
+      "col": 38,
+      "from": " < ",
+      "to": " <= "
+    },
+    {
+      "id": 182,
+      "file": "src/request.ts",
+      "line": 106,
+      "col": 16,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 183,
+      "file": "src/utils/encode.ts",
+      "line": 29,
+      "col": 42,
+      "from": " <= ",
+      "to": " < "
+    },
+    {
+      "id": 184,
+      "file": "src/helper/css/index.ts",
+      "line": 102,
+      "col": 28,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 185,
+      "file": "src/middleware/serve-static/path.ts",
+      "line": 17,
+      "col": 47,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 186,
+      "file": "src/middleware/serve-static/index.ts",
+      "line": 125,
+      "col": 58,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 187,
+      "file": "src/helper/css/common.ts",
+      "line": 73,
+      "col": 24,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 188,
+      "file": "src/middleware/compress/index.ts",
+      "line": 113,
+      "col": 23,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 189,
+      "file": "src/utils/body.ts",
+      "line": 203,
+      "col": 16,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 190,
+      "file": "src/middleware/ip-restriction/index.ts",
+      "line": 245,
+      "col": 35,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 191,
+      "file": "src/router/reg-exp-router/router.ts",
+      "line": 73,
+      "col": 46,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 192,
+      "file": "src/router/reg-exp-router/node.ts",
+      "line": 90,
+      "col": 36,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 193,
+      "file": "src/helper/cookie/index.ts",
+      "line": 24,
+      "col": 34,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 194,
+      "file": "src/helper/ssg/utils.ts",
+      "line": 28,
+      "col": 30,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 195,
+      "file": "src/helper/adapter/index.ts",
+      "line": 73,
+      "col": 21,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 196,
+      "file": "src/helper/cookie/index.ts",
+      "line": 84,
+      "col": 18,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 197,
+      "file": "src/helper/adapter/index.ts",
+      "line": 56,
+      "col": 67,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 198,
+      "file": "src/router/reg-exp-router/prepared-router.ts",
+      "line": 38,
+      "col": 25,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 199,
+      "file": "src/helper/ssg/ssg.ts",
+      "line": 103,
+      "col": 39,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 200,
+      "file": "src/middleware/combine/index.ts",
+      "line": 166,
+      "col": 47,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 201,
+      "file": "src/middleware/trailing-slash/index.ts",
+      "line": 64,
+      "col": 29,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 202,
+      "file": "src/middleware/compress/index.ts",
+      "line": 98,
+      "col": 20,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 203,
+      "file": "src/helper/css/common.ts",
+      "line": 177,
+      "col": 21,
+      "from": " + 1",
+      "to": " - 1"
+    },
+    {
+      "id": 204,
+      "file": "src/middleware/timeout/index.ts",
+      "line": 53,
+      "col": 16,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 205,
+      "file": "src/router/reg-exp-router/prepared-router.ts",
+      "line": 138,
+      "col": 30,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 206,
+      "file": "src/helper/streaming/utils.ts",
+      "line": 7,
+      "col": 71,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 207,
+      "file": "src/middleware/bearer-auth/index.ts",
+      "line": 227,
+      "col": 41,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 208,
+      "file": "src/helper/proxy/index.ts",
+      "line": 177,
+      "col": 32,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 209,
+      "file": "src/utils/jwt/jws.ts",
+      "line": 55,
+      "col": 20,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 210,
+      "file": "src/middleware/body-limit/index.ts",
+      "line": 92,
+      "col": 14,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 211,
+      "file": "src/helper/ssg/utils.ts",
+      "line": 93,
+      "col": 35,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 212,
+      "file": "src/middleware/method-override/index.ts",
+      "line": 77,
+      "col": 24,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 213,
+      "file": "src/helper/css/index.ts",
+      "line": 106,
+      "col": 16,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 214,
+      "file": "src/helper/html/index.ts",
+      "line": 26,
+      "col": 23,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 215,
+      "file": "src/middleware/etag/digest.ts",
+      "line": 84,
+      "col": 26,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 216,
+      "file": "src/middleware/method-override/index.ts",
+      "line": 79,
+      "col": 41,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 217,
+      "file": "src/middleware/ip-restriction/index.ts",
+      "line": 149,
+      "col": 17,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 218,
+      "file": "src/adapter/cloudflare-workers/websocket.ts",
+      "line": 15,
+      "col": 20,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 219,
+      "file": "src/helper/html/index.ts",
+      "line": 52,
+      "col": 23,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 220,
+      "file": "src/middleware/combine/index.ts",
+      "line": 115,
+      "col": 24,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 221,
+      "file": "src/middleware/jwk/jwk.ts",
+      "line": 85,
+      "col": 28,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 222,
+      "file": "src/context.ts",
+      "line": 317,
+      "col": 23,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 223,
+      "file": "src/middleware/pretty-json/index.ts",
+      "line": 51,
+      "col": 90,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 224,
+      "file": "src/helper/accepts/accepts.ts",
+      "line": 37,
+      "col": 22,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 225,
+      "file": "src/utils/jwt/jws.ts",
+      "line": 67,
+      "col": 17,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 226,
+      "file": "src/middleware/jwt/jwt.ts",
+      "line": 74,
+      "col": 20,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 227,
+      "file": "src/context.ts",
+      "line": 600,
+      "col": 56,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 228,
+      "file": "src/helper/html/index.ts",
+      "line": 32,
+      "col": 42,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 229,
+      "file": "src/helper/websocket/index.ts",
+      "line": 129,
+      "col": 23,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 230,
+      "file": "src/middleware/cache/index.ts",
+      "line": 278,
+      "col": 17,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 231,
+      "file": "src/middleware/cache/index.ts",
+      "line": 268,
+      "col": 29,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 232,
+      "file": "src/adapter/lambda-edge/handler.ts",
+      "line": 183,
+      "col": 23,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 233,
+      "file": "src/validator/utils.ts",
+      "line": 19,
+      "col": 6,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 234,
+      "file": "src/middleware/cache/index.ts",
+      "line": 268,
+      "col": 46,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 235,
+      "file": "src/middleware/cache/index.ts",
+      "line": 86,
+      "col": 26,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 236,
+      "file": "src/compose.ts",
+      "line": 62,
+      "col": 39,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 237,
+      "file": "src/middleware/serve-static/index.ts",
+      "line": 76,
+      "col": 38,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 238,
+      "file": "src/helper/css/index.ts",
+      "line": 129,
+      "col": 21,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 239,
+      "file": "src/middleware/timeout/index.ts",
+      "line": 46,
+      "col": 32,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 240,
+      "file": "src/client/utils.ts",
+      "line": 74,
+      "col": 23,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 241,
+      "file": "src/middleware/jsx-renderer/index.ts",
+      "line": 65,
+      "col": 25,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 242,
+      "file": "src/adapter/deno/ssg.ts",
+      "line": 17,
+      "col": 63,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 243,
+      "file": "src/hono-base.ts",
+      "line": 409,
+      "col": 22,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 244,
+      "file": "src/helper/accepts/accepts.ts",
+      "line": 28,
+      "col": 13,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 245,
+      "file": "src/helper/cookie/index.ts",
+      "line": 36,
+      "col": 22,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 246,
+      "file": "src/router/reg-exp-router/trie.ts",
+      "line": 33,
+      "col": 19,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 247,
+      "file": "src/compose.ts",
+      "line": 67,
+      "col": 13,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 248,
+      "file": "src/middleware/combine/index.ts",
+      "line": 56,
+      "col": 36,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 249,
+      "file": "src/helper/cookie/index.ts",
+      "line": 34,
+      "col": 15,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 250,
+      "file": "src/utils/body.ts",
+      "line": 243,
+      "col": 29,
+      "from": " - 1",
+      "to": " + 1"
+    },
+    {
+      "id": 251,
+      "file": "src/utils/concurrent.ts",
+      "line": 21,
+      "col": 18,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 252,
+      "file": "src/router/reg-exp-router/trie.ts",
+      "line": 76,
+      "col": 21,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 253,
+      "file": "src/middleware/method-not-allowed/index.ts",
+      "line": 90,
+      "col": 25,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 254,
+      "file": "src/adapter/aws-lambda/conninfo.ts",
+      "line": 65,
+      "col": 30,
+      "from": " - 1",
+      "to": " + 1"
+    },
+    {
+      "id": 255,
+      "file": "src/validator/utils.ts",
+      "line": 12,
+      "col": 6,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 256,
+      "file": "src/utils/stream.ts",
+      "line": 19,
+      "col": 20,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 257,
+      "file": "src/hono-base.ts",
+      "line": 192,
+      "col": 30,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 258,
+      "file": "src/helper/ssg/ssg.ts",
+      "line": 432,
+      "col": 31,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 259,
+      "file": "src/middleware/method-override/index.ts",
+      "line": 71,
+      "col": 21,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 260,
+      "file": "src/helper/css/index.ts",
+      "line": 36,
+      "col": 17,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 261,
+      "file": "src/middleware/method-not-allowed/index.ts",
+      "line": 106,
+      "col": 73,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 262,
+      "file": "src/helper/accepts/accepts.ts",
+      "line": 29,
+      "col": 11,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 263,
+      "file": "src/adapter/aws-lambda/conninfo.ts",
+      "line": 56,
+      "col": 35,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 264,
+      "file": "src/middleware/etag/index.ts",
+      "line": 41,
+      "col": 14,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 265,
+      "file": "src/adapter/lambda-edge/handler.ts",
+      "line": 150,
+      "col": 26,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 266,
+      "file": "src/helper/css/common.ts",
+      "line": 222,
+      "col": 23,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 267,
+      "file": "src/helper/adapter/index.ts",
+      "line": 78,
+      "col": 37,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 268,
+      "file": "src/adapter/lambda-edge/handler.ts",
+      "line": 222,
+      "col": 14,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 269,
+      "file": "src/client/utils.ts",
+      "line": 66,
+      "col": 18,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 270,
+      "file": "src/helper/ssg/ssg.ts",
+      "line": 154,
+      "col": 15,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 271,
+      "file": "src/middleware/timing/timing.ts",
+      "line": 79,
+      "col": 13,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 272,
+      "file": "src/utils/body.ts",
+      "line": 104,
+      "col": 16,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 273,
+      "file": "src/helper/streaming/utils.ts",
+      "line": 5,
+      "col": 11,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 274,
+      "file": "src/middleware/etag/digest.ts",
+      "line": 42,
+      "col": 17,
+      "from": " < ",
+      "to": " <= "
+    },
+    {
+      "id": 275,
+      "file": "src/validator/validator.ts",
+      "line": 130,
+      "col": 36,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 276,
+      "file": "src/helper/css/index.ts",
+      "line": 99,
+      "col": 27,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 277,
+      "file": "src/middleware/jwt/jwt.ts",
+      "line": 85,
+      "col": 55,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 278,
+      "file": "src/adapter/lambda-edge/handler.ts",
+      "line": 169,
+      "col": 17,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 279,
+      "file": "src/utils/html.ts",
+      "line": 42,
+      "col": 28,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 280,
+      "file": "src/helper/streaming/sse.ts",
+      "line": 36,
+      "col": 21,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 281,
+      "file": "src/middleware/language/language.ts",
+      "line": 164,
+      "col": 12,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 282,
+      "file": "src/adapter/bun/conninfo.ts",
+      "line": 40,
+      "col": 57,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 283,
+      "file": "src/middleware/language/language.ts",
+      "line": 214,
+      "col": 33,
+      "from": " < ",
+      "to": " <= "
+    },
+    {
+      "id": 284,
+      "file": "src/router/reg-exp-router/trie.ts",
+      "line": 46,
+      "col": 64,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 285,
+      "file": "src/middleware/cors/index.ts",
+      "line": 76,
+      "col": 26,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 286,
+      "file": "src/helper/adapter/index.ts",
+      "line": 56,
+      "col": 36,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 287,
+      "file": "src/helper/route/index.ts",
+      "line": 127,
+      "col": 50,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 288,
+      "file": "src/helper/ssg/utils.ts",
+      "line": 112,
+      "col": 27,
+      "from": " <= ",
+      "to": " < "
+    },
+    {
+      "id": 289,
+      "file": "src/utils/color.ts",
+      "line": 19,
+      "col": 25,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 290,
+      "file": "src/helper/streaming/stream.ts",
+      "line": 30,
+      "col": 12,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 291,
+      "file": "src/compose.ts",
+      "line": 62,
+      "col": 34,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 292,
+      "file": "src/router/pattern-router/router.ts",
+      "line": 24,
+      "col": 39,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 293,
+      "file": "src/middleware/jsx-renderer/index.ts",
+      "line": 41,
+      "col": 30,
+      "from": "===",
+      "to": "!=="
+    },
+    {
+      "id": 294,
+      "file": "src/middleware/body-limit/index.ts",
+      "line": 73,
+      "col": 26,
+      "from": " > ",
+      "to": " >= "
+    },
+    {
+      "id": 295,
+      "file": "src/middleware/jwk/jwk.ts",
+      "line": 70,
+      "col": 32,
+      "from": " || ",
+      "to": " && "
+    },
+    {
+      "id": 296,
+      "file": "src/utils/body.ts",
+      "line": 248,
+      "col": 31,
+      "from": "!==",
+      "to": "==="
+    },
+    {
+      "id": 297,
+      "file": "src/utils/stream.ts",
+      "line": 97,
+      "col": 21,
+      "from": "true",
+      "to": "false"
+    },
+    {
+      "id": 298,
+      "file": "src/middleware/mount/index.ts",
+      "line": 19,
+      "col": 45,
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "id": 299,
+      "file": "src/adapter/cloudflare-workers/utils.ts",
+      "line": 39,
+      "col": 13,
+      "from": " && ",
+      "to": " || "
+    },
+    {
+      "id": 300,
+      "file": "src/adapter/aws-lambda/handler.ts",
+      "line": 586,
+      "col": 65,
+      "from": " || ",
+      "to": " && "
+    }
+  ]
+}
