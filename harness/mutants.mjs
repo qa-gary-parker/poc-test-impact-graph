@@ -1,7 +1,7 @@
 // Lists every mutation site in hono's src/ and draws a seeded sample.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { HONO, RESULTS, sh, writeJson } from './lib.mjs';
+import { HONO, NODE, RESULTS, sh, writeJson } from './lib.mjs';
 
 const SAMPLE = Number(process.env.SAMPLE ?? 300);
 const PER_FILE_CAP = 6;
@@ -76,5 +76,5 @@ for (const site of shuffled) {
   if (sample.length === SAMPLE) break;
 }
 
-writeJson(join(RESULTS, 'mutants.json'), { seed: SEED, perFileCap: PER_FILE_CAP, filesScanned: files.length, sites: sites.length, mutants: sample });
+writeJson(join(RESULTS, 'mutants.json'), { node: NODE, seed: SEED, perFileCap: PER_FILE_CAP, filesScanned: files.length, sites: sites.length, mutants: sample });
 console.log(`${files.length} files, ${sites.length} sites, ${sample.length} sampled from ${Object.keys(perFile).length} files`);

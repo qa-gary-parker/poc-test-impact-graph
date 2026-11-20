@@ -1,4 +1,5 @@
 {
+  "node": "v24.21.0",
   "seed": 6,
   "perFileCap": 6,
   "filesScanned": 155,

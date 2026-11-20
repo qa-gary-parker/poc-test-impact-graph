@@ -1,5 +1,6 @@
 [
   {
+    "node": "v24.21.0",
     "sha": "a8ae5b1d6e8502ce61cd9e7b853d8107e377fc7b",
     "subject": "fix(helper/websocket): do not depend on DOM-only types (#5653)",
     "code": [
@@ -40,6 +41,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "fd7a3305afcc26cc180c4e0417e1bcf4df3125b0",
     "subject": "fix(cookie): do not accept a lone double quote as a cookie value (#5652)",
     "code": [
@@ -107,6 +109,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "95431d13f868cfd40ad49475d8c1999ca132ff84",
     "subject": "fix(compress): send the compressed response headers for HEAD requests (#5651)",
     "code": [
@@ -134,6 +137,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "a46d6025e4f59218ced85331029ba3be9ad487f0",
     "subject": "fix(client): keep class instances in the init options as they are (#5650)",
     "code": [
@@ -185,6 +189,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "9995a384d90bc5aa42b70d7a761469e278ee5076",
     "subject": "feat(jwt): add a typ option to verify the token header (#5639)",
     "code": [
@@ -220,6 +225,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "0e24cf650659915629e8b3c401a4799dc89604b3",
     "subject": "feat(secure-headers): add an overwrite option (#5634)",
     "code": [
@@ -245,6 +251,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "ab74a8dd94e35784a2a456a47f35e8bbd61f9ab9",
     "subject": "fix(utils/types): stop JSONParsed at a recursive JSON type (#5645)",
     "code": [
@@ -313,6 +320,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "399e7c92071b4f717f532087ff67cd2843ffd01b",
     "subject": "fix(lambda-edge): omit body in a 204 result (#5643)",
     "code": [
@@ -343,6 +351,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "dea44c8880b91a5b6e19469ca3715660eabdb864",
     "subject": "fix(jsx/dom): keep a falsy Suspense fallback (#5644)",
     "code": [
@@ -415,6 +424,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "2198388011e5ea75bebba2843b4cb81ea060b7ac",
     "subject": "docs: fix JSDoc parameter types and missing annotations in middleware and helpers (#5409)",
     "code": [
@@ -541,6 +551,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "265f36be629379967d90ccd6f6d5f121a3c6901c",
     "subject": "fix(combine): continue the chain when a Condition returns true in every() (#5392)",
     "code": [
@@ -568,6 +579,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "6dc11ed09e253f8b38374f21b60837803d66c756",
     "subject": "fix(jsx/dom): restore attributes and effects when Suspense children suspend again (#5642)",
     "code": [
@@ -641,6 +653,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "64a1d5a9e53bf244ab13caff7b7d64dcbfb803de",
     "subject": "fix(method-override): drop the body when overriding to GET or HEAD (#5641)",
     "code": [
@@ -668,6 +681,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "69b898ebb717f2e40cf69edbca1ea266f1238c03",
     "subject": "fix(proxy): drop Transfer-Encoding and Keep-Alive from the headers option (#5640)",
     "code": [
@@ -695,6 +709,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "fb48e2b295dd434a67a050c453f4d5d815b2972c",
     "subject": "fix(bun): pass errors thrown in WebSocket handlers to onError (#5620)",
     "code": [
@@ -722,6 +737,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "bfdc9723c347d938be1e5ccdcf80e68388acd1b8",
     "subject": "fix(jsx/dom): keep keyed components in order when they update with a reorder (#5637)",
     "code": [
@@ -795,6 +811,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "c49a32dd97bd6e297036190541e38d902cf81225",
     "subject": "fix(jsx/dom): keep an ErrorBoundary in sync when its parent re-renders (#5638)",
     "code": [
@@ -868,6 +885,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "354836132e32d87637b30e8c3a60fd2d997ba2a8",
     "subject": "fix(jsx/dom): reset a form's pending state when its action rejects (#5636)",
     "code": [
@@ -947,6 +965,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "0d43a7472ae406b0e8e6a0d9d4095c7476d9b406",
     "subject": "fix(jsx/dom): align useActionState with React 19 (#5635)",
     "code": [
@@ -1023,6 +1042,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "6e8fbe186665d48a59c9aafc5e065925a168a37b",
     "subject": "fix(jsx): render an async component that returns null, a boolean, or a  number (#5594)",
     "code": [
@@ -1254,6 +1274,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "c7ff08f13b9c6cc8de72f65d0a65e4b3beb1c5dd",
     "subject": "Merge commit from fork",
     "code": [
@@ -1285,6 +1306,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "b982c0292eefe44e1c898acc3952ec5bb80a30f4",
     "subject": "Merge commit from fork",
     "code": [
@@ -1541,6 +1563,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "9aeb45b40a9b600399e977eabc076d82df43cc92",
     "subject": "Merge commit from fork",
     "code": [
@@ -1576,6 +1599,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "b0af6bb93c0337357f6a3d8b95fde2d416c43fd3",
     "subject": "Merge commit from fork",
     "code": [
@@ -1615,6 +1639,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "1534ffa3e9c576dc3b13d8d514c85c6e2e28c1a4",
     "subject": "fix(factory): keep independent return types for nine handlers (#5618)",
     "code": [
@@ -1646,6 +1671,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "eb754bd5ef22c63f1634a4c374a86be086f85710",
     "subject": "fix(jsx): do not render ref objects as attributes (#5615)",
     "code": [
@@ -1728,6 +1754,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "6cbe361b7ad2947fd672f23ed689eef81c2f0615",
     "subject": "fix(jsx): escape element and object attribute values (#5512)",
     "code": [
@@ -1815,6 +1842,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "8b7f9e97d661dbc8e933cf81dc36fec8d35b9146",
     "subject": "fix(aws-lambda): sanitize non-ASCII header values in API Gateway v2 events (#5483)",
     "code": [
@@ -1842,6 +1870,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "7852e0a1e07f1d686f78f91589c7f9b573ca8bae",
     "subject": "fix(ssg): do not reuse created directories across toSSG runs (#5381)",
     "code": [
@@ -1873,6 +1902,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "bcfd02bb50fb015587aac7fe1745b5b2b61361ec",
     "subject": "fix(jsx): add the CSP nonce to all scripts generated by ErrorBoundary (#5430)",
     "code": [
@@ -1942,6 +1972,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "456fe46354ca06bd3c403e6a4b1c249bf1275d2c",
     "subject": "fix(cookie): match the __Secure- and __Host- prefixes case-insensitively in CookieConstraint (#5611)",
     "code": [
@@ -2009,6 +2040,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "98b35afc0e8d70dc07bf59c3b796c9cbfdd4c7a7",
     "subject": "fix(accepts): preserve exact media type quality over subtype wildcards (#5427)",
     "code": [
@@ -2036,6 +2068,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "b3f127207b49a98be52d626c026f61054286e5c6",
     "subject": "fix(etag): preserve commas within quoted entity tags (#5353)",
     "code": [
@@ -2063,6 +2096,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "28e7498e88cc3d0dad2bc22ffece685dfb16eff7",
     "subject": "fix(timing): escape double quotes and backslashes in Server-Timing descriptions (#5478)",
     "code": [
@@ -2088,6 +2122,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "e44d0a5329b0c2c7b540020abe86e3a8e8666f37",
     "subject": "fix(utils/mime,ssg): match media types case-insensitively (#5449)",
     "code": [
@@ -2191,6 +2226,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "edae2bf701e37e49f4603e9ce62d7466624e3ed4",
     "subject": "fix(timing): honor an explicit precision of 0 in setMetric (#5363)",
     "code": [
@@ -2216,6 +2252,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "c0fd46eb6f9f3330f0763913b0b74548a966718d",
     "subject": "fix(client): detect the JSON media type with whitespace before a parameter (#5609)",
     "code": [
@@ -2247,6 +2284,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "a512ba4feeca157090dfd894dbaf1380f214ccf4",
     "subject": "fix(etag,pretty-json): cancel the discarded response body (#5606)",
     "code": [
@@ -2281,6 +2319,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "846e95259bd452fd07286898658897d0fef436dd",
     "subject": "fix(utils/url): do not match a query key across separators (#5607)",
     "code": [
@@ -2467,6 +2506,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "f98dcc9cc613b3e2b76326604a9338c79187f929",
     "subject": "fix(cookie): match the __Secure- and __Host- prefixes case-insensitively (#5608)",
     "code": [
@@ -2534,6 +2574,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "e1dd58856eea8c3e91494ca6a12578325b01cf46",
     "subject": "fix(jwt): reject a signature segment outside the base64url alphabet and a header with crit (#5597)",
     "code": [
@@ -2568,6 +2609,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "bf16471913b5199212dac33f5d170f94745dd26a",
     "subject": "Merge commit from fork",
     "code": [
@@ -2595,6 +2637,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "d88fab372415277a9e540e895650943dd08eef4a",
     "subject": "Merge commit from fork",
     "code": [
@@ -2634,6 +2677,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "34f90432a1794b28e52802670efcd01963f716d6",
     "subject": "Merge commit from fork",
     "code": [
@@ -2889,6 +2933,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "8a103aa59bcfbffd5396b1548a0dff3688777c36",
     "subject": "Merge commit from fork",
     "code": [
@@ -2983,6 +3028,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "15bbd96ad1b62a0b189db4fd8dc7bf8ef280c513",
     "subject": "Merge commit from fork",
     "code": [
@@ -3010,6 +3056,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "17ad0e21f5a91c939eeafa3df05793a8ea60f016",
     "subject": "fix(context): allow `c.header()` after the response body is consumed (#5587)",
     "code": [
@@ -3146,6 +3193,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "ed1d5f72135ccf7e09c17d64dc4af7588dd3e491",
     "subject": "fix(auth): escape backslashes in the WWW-Authenticate realm (#5590)",
     "code": [
@@ -3191,6 +3239,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "eb78ecaabe26baa8addc053cf8a94b5b7603c001",
     "subject": "fix(utils/url): preserve encoded duplicate query order (#5495)",
     "code": [
@@ -3378,6 +3427,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "06a45bc3a639c1f9eea28e16370bc03447f0d7cb",
     "subject": "feat(bearer-auth): allow MessageFunction to return a Response (#5269)",
     "code": [
@@ -3405,6 +3455,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "5ca49b0720755c585c9a9835f0a479ceea36fb52",
     "subject": "fix(css): Fix multiline CSS handling in style replacement (#5405)",
     "code": [
@@ -3436,6 +3487,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "e9c01079a932ffdfa269c0011075ac43fd8a1035",
     "subject": "fix(hono-base): disallow `getPath` when `strict` is `false` (#5563)",
     "code": [
@@ -3632,6 +3684,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "08807ce12aa3aa27c8c5adf63e677bbab6bceda9",
     "subject": "fix(trie-router): keep first value for duplicate path params (#5422) (#5423)",
     "code": [
@@ -3724,6 +3777,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "e77c7c8eb9fea50a496ba10010063998b55d7a6b",
     "subject": "fix(helper/route): match regex params in basePath() the same way as the router (#5498)",
     "code": [
@@ -3814,6 +3868,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "d54720da80134a180f5fe2dd98a7676cfc8f08b4",
     "subject": "fix(serve-static): respect q-values in Accept-Encoding for precompressed files (#5436)",
     "code": [
@@ -3845,6 +3900,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "ae401f080004872678100e890fd3398d3df09e67",
     "subject": "fix(css): keep the descendant combinator before a pseudo-class when minifying (#5451)",
     "code": [
@@ -3874,6 +3930,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "2013fed5b21719bb1e6f44ce7f49757660946856",
     "subject": "fix(css): keep \"//\" inside an unquoted url() when minifying (#5450)",
     "code": [
@@ -3903,6 +3960,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "43379d93e23abaaa54ff85f2ce64a149f50d4295",
     "subject": "fix(jsx): preserve self-closing void elements in cloneElement (#5314)",
     "code": [
@@ -3984,6 +4042,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "3362244401515a1530616aefb87eb388152f82a3",
     "subject": "fix(build): keep barrel imports in the bundled `d.ts` (#5557)",
     "code": [
@@ -4013,6 +4072,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "588ec13fa68ea44fed1b5e1b503341db2bf09d70",
     "subject": "fix(serve-static): only serve GET and HEAD requests (#5514)",
     "code": [
@@ -4044,6 +4104,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "ae595de8ae05ea548560da93140ee1d53e5a8202",
     "subject": "feat(mount): introduce Mount Middleware and deprecate `app.mount` (#5221)",
     "code": [
@@ -4240,6 +4301,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "f23b146afcec63606144cde50b5fbd360dd60238",
     "subject": "fix(jsx): allow JSXNode function component results (#5476)",
     "code": [
@@ -4321,6 +4383,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "6d73a74f9757ed65d6103c0e8375097fa20873c4",
     "subject": "docs(request): fix jsdoc comments for some getters (#5445)",
     "code": [
@@ -4489,6 +4552,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "afb2068c1c53a530528ac5f237e245793dd03c07",
     "subject": "fix(combine): return a Response from a short-circuiting middleware in some() (#5391)",
     "code": [
@@ -4516,6 +4580,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "e5bb2062a3ddd645e3a16d1300bd76d6c9af33a5",
     "subject": "fix(jsx): add px to numeric gridGap, gridRowGap and gridColumnGap (#5487)",
     "code": [
@@ -4573,6 +4638,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "c3053ccf14f1c4c70a0c2888eed6121b9f6c8f95",
     "subject": "fix(etag): correctly match mixed-case header name in retainedHeader option (#5475)",
     "code": [
@@ -4600,6 +4666,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "be1f7498fed269544a3c544db0a5a727048462a8",
     "subject": "fix(build): keep internal types private in bundled d.ts and avoid a self-referencing JSX.IntrinsicElements (#5485)",
     "code": [
@@ -4679,6 +4746,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "8b05c774ef1555c70f5ba5e2991b7e77cc3635cc",
     "subject": "Merge commit from fork",
     "code": [
@@ -4710,6 +4778,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "b877827fccde0be4ee78457ae8b65db2436139f9",
     "subject": "feat(adapters): add the seven adapters as workspace packages (#5463)",
     "code": [
@@ -4846,6 +4915,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "fc2343dbad8af7ab82bc4a6c6907e57416aed878",
     "subject": "feat(adapters): add @hono/bun as a workspace package (#5447)",
     "code": [
@@ -4886,6 +4956,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "90d02fb1645c12a65d27f39594d2129db2065ba7",
     "subject": "fix(types): allow returning a Blob as a response body (#5446)",
     "code": [
@@ -5023,6 +5094,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "859e2c2bd0ec6d104e98e126eaa86cfcf5def0d9",
     "subject": "chore: let oxfmt sort imports instead of eslint (#5442)",
     "code": [
@@ -5173,6 +5245,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "8dcd52b92beada28962e818bdca8a137a6beb656",
     "subject": "chore: replace prettier with oxfmt (#5435)",
     "code": [
@@ -5342,6 +5415,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "6cadf7537385c6e3df9cbd6d05c9b84c82ae0361",
     "subject": "fix(lambda-edge): fail with a descriptive error on a malformed event (#5358)",
     "code": [
@@ -5372,6 +5446,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "de310ac063febf3e7b73f6206142d0e88800661f",
     "subject": "fix(lambda-edge): sync content type detection with aws-lambda (#5426)",
     "code": [
@@ -5402,6 +5477,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "28e8572cd265b4da1160ce6cd51919bb70516e2c",
     "subject": "fix(aws-lambda): preserve empty query parameters (#5292)",
     "code": [
@@ -5429,6 +5505,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "0d86899d28e146da0c8760201b2d08ddae732eaa",
     "subject": "fix(aws-lambda): treat binary +xml archive media types as binary (#5424)",
     "code": [
@@ -5456,6 +5533,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "52febbcc30bc509d5e4987577e63906fe08fc471",
     "subject": "fix(jwt): throw JwtTokenInvalid when the signature is not valid base64url (#5379)",
     "code": [
@@ -5490,6 +5568,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "f950277cd3d9264622785e82785f21c648da699a",
     "subject": "fix(pretty-json): don't break responses with unparseable JSON bodies (#5377)",
     "code": [
@@ -5517,6 +5596,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "00ee875728e2369b98a9ab7dda0690b77afedcff",
     "subject": "fix(linear-router): don't match an empty path segment as a param (#5373)",
     "code": [
@@ -5543,6 +5623,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "f5a53463ad2ff791fc02418b645750ce75a260ad",
     "subject": "fix(accepts): match media types and language tags case-insensitively (#5376)",
     "code": [
@@ -5570,6 +5651,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "cb5bea3614e6591e8ab933ef9a38ce7addf1d09a",
     "subject": "fix(jsx): replace Suspense and ErrorBoundary content across newlines (#5380)",
     "code": [
@@ -5649,6 +5731,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "e8c8c21244f87da80aaa5ac5ab9c92f3faca2489",
     "subject": "perf(jsx/dom): optimize matching-head child lookup during reconciliation (#5329)",
     "code": [
@@ -5722,6 +5805,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "8755b17fbcfdee76511eeb460e18e94e6c9a8d30",
     "subject": "docs(combine): fix except() JSDoc param and add missing @returns (#5346)",
     "code": [
@@ -5747,6 +5831,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "edd138ee3049749190de3dcd7e32d7bcbf224e41",
     "subject": "fix(request): keep the request media type when reusing a cached body (#5366)",
     "code": [
@@ -5917,6 +6002,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "9b4e9c2864c30ea9275cf426e2d2716bd9f05195",
     "subject": "fix(accept): clamp a negative q to 0, not 1 (#5357)",
     "code": [
@@ -5960,6 +6046,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "65cff90e152dbbbcdde2808af15b48344676edfe",
     "subject": "fix(accept): treat the q parameter name as case-insensitive (#5349)",
     "code": [
@@ -6003,6 +6090,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "f147de5ea1eeadd4b4851ab075999673e140a303",
     "subject": "fix(accepts, language): skip accept entries with quality 0 when matching (#5311)",
     "code": [
@@ -6036,6 +6124,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "90e1b948467961718afd3ae34af9dee582b42248",
     "subject": "fix(aws-lambda): respect backpressure when streaming the response body (#5351)",
     "code": [
@@ -6061,6 +6150,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "7792f5dc14acaa92056c1bf402241567ff9c7396",
     "subject": "perf(jsx/dom): reduce lookup work for large keyed updates (#5340)",
     "code": [
@@ -6134,6 +6224,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "e7b38ee42bfa41f20194ad20fb949b625346be62",
     "subject": "docs: fix typos in code comments and link third-party middleware section (#5343)",
     "code": [
@@ -6315,6 +6406,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "2b8ed402cdab6dfc5e829b480806dcd8db94161e",
     "subject": "Merge commit from fork",
     "code": [
@@ -6427,6 +6519,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "dac5d5794c6134711e469c5e69d09cd6274e1fc1",
     "subject": "refactor(on-handler): use forEach for consistent handler iteration (#5326)",
     "code": [
@@ -6615,6 +6708,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "e2740d5a1bd0b4254e517e3af8b60789284bc7bd",
     "subject": "fix(types): allow symbol keys in Context<any> get and set fallbacks (#5300)",
     "code": [
@@ -6751,6 +6845,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "499c35ebda35777fd35a7dd1906dd4f2687da61e",
     "subject": "fix(client): normalize root WebSocket URLs (#5291)",
     "code": [
@@ -6801,6 +6896,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "50b8788cf54cb60112b7cd93642bc5094901475c",
     "subject": "fix(client): keep a param value of \"index\" in $url() and $path() (#5297)",
     "code": [
@@ -6851,6 +6947,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "531e9c5a3ae058d10de33f643055bd4009a87178",
     "subject": "Merge commit from fork",
     "code": [
@@ -6965,6 +7062,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "3a67f7f3997e1437d108f7bcba2dbcee2df69221",
     "subject": "Merge commit from fork",
     "code": [
@@ -7003,6 +7101,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "9c28d724c5a7fb086ebaa812fdc1ad6e957c63bc",
     "subject": "Merge commit from fork",
     "code": [
@@ -7194,6 +7293,7 @@
     }
   },
   {
+    "node": "v24.21.0",
     "sha": "5e5b83d6ed963a2bc7d8384002e1c953648253b1",
     "subject": "fix(utils/stream): do not let abort listeners crash abort() (#5274)",
     "code": [

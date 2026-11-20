@@ -1,6 +1,6 @@
 // Three clean runs of the suite: per-file durations and any file that fails without a fault.
 import { join } from 'node:path';
-import { RESULTS, HONO_SHA, isSuiteFile, runSuite, sh, writeJson } from './lib.mjs';
+import { NODE, RESULTS, HONO_SHA, isSuiteFile, runSuite, sh, writeJson } from './lib.mjs';
 
 const RUNS = 3;
 if (sh(['git', 'rev-parse', 'HEAD']).stdout.trim() !== HONO_SHA) throw new Error('work/hono is not at the measured commit');
@@ -26,7 +26,7 @@ const perFile = Object.fromEntries(Object.entries(files).sort().map(([f, v]) => 
 
 writeJson(join(RESULTS, 'baseline.json'), {
   honoSha: HONO_SHA,
-  node: process.version,
+  node: NODE,
   runs: runs.map((r) => ({ wallMs: r.ms, files: r.files.length, tests: r.numTotalTests, failedTests: r.numFailedTests })),
   flakyFiles: Object.keys(perFile).filter((f) => perFile[f].failedRuns > 0),
   files: perFile,

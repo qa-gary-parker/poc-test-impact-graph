@@ -1,7 +1,7 @@
 // Records the versions and tool defaults the runs use, read from the installed tools rather than typed in.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { CRG, HONO, RESULTS, sh, writeJson } from './lib.mjs';
+import { CRG, HONO, NODE, RESULTS, sh, writeJson } from './lib.mjs';
 
 const out = (argv) => sh(argv, { allowFail: false }).stdout.trim();
 
@@ -16,7 +16,7 @@ const impactDefault = (flag) => {
 
 writeJson(join(RESULTS, 'env.json'), {
   capturedAt: new Date().toISOString(),
-  node: process.version,
+  node: NODE,
   vitest: JSON.parse(readFileSync(join(HONO, 'node_modules/vitest/package.json'), 'utf8')).version,
   'code-review-graph': out([...CRG, '--version']).split(' ').pop(),
   impactDefaults: Object.fromEntries(['--depth', '--max-results', '--detail-level', '--max-files'].map((f) => [f, impactDefault(f)])),

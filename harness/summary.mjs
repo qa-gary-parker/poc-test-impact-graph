@@ -10,6 +10,18 @@ const rawRuns = readJsonl(join(RESULTS, 'mutant-runs.jsonl'));
 const selections = readJson(join(RESULTS, 'selections.json'));
 const commits = readJson(join(RESULTS, 'commits.json'), []);
 const confirmed = readJson(join(RESULTS, 'confirm.json'));
+// Every result file records the Node it ran on; the summary refuses a mix.
+const nodes = new Set([
+  env.node,
+  baseline.node,
+  readJson(join(RESULTS, 'mutants.json')).node,
+  ...rawRuns.map((r) => r.node),
+  ...Object.values(confirmed).map((c) => c.node),
+  ...Object.values(selections).map((s) => s.node),
+  ...commits.map((c) => c.node),
+]);
+if (nodes.size !== 1) throw new Error(`results were produced on more than one Node: ${[...nodes].join(', ')}`);
+const [node] = nodes;
 const confirmedRuns = rawRuns.map((r) => {
   if (r.timedOut || !r.failing.length) return r;
   const c = confirmed[r.id];
@@ -85,7 +97,7 @@ for (const arm of ARMS) {
 
 const summary = {
   target: { repo: 'honojs/hono', sha: baseline.honoSha, suiteFiles: suiteFiles.length, suiteTests: baseline.runs[0].tests, suiteWallMs: median(baseline.runs.map((r) => r.wallMs)), suiteFileMsTotal: totalMs },
-  tools: { 'code-review-graph': env['code-review-graph'], vitest: env.vitest, node: baseline.node, macOS: env.macOS },
+  tools: { 'code-review-graph': env['code-review-graph'], vitest: env.vitest, node, macOS: env.macOS },
   mutants: {
     filesScanned,
     sites,

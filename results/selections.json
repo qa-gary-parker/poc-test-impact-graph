@@ -1,5 +1,6 @@
 {
   "src/utils/jwt/jwt.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/jwk/index.test.ts",
@@ -46,6 +47,7 @@
     }
   },
   "src/utils/accept.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/accepts/accepts.test.ts",
@@ -101,6 +103,7 @@
     }
   },
   "src/utils/url.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/hono.test.ts",
@@ -299,6 +302,7 @@
     }
   },
   "src/middleware/timing/timing.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/timing/index.test.ts"
@@ -336,6 +340,7 @@
     }
   },
   "src/middleware/bearer-auth/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/bearer-auth/index.test.ts"
@@ -375,6 +380,7 @@
     }
   },
   "src/middleware/etag/digest.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/etag/digest.test.ts"
@@ -417,6 +423,7 @@
     }
   },
   "src/middleware/serve-static/path.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/serve-static/path.test.ts"
@@ -461,6 +468,7 @@
     }
   },
   "src/helper/cookie/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/aws-lambda/handler.test.ts",
@@ -538,6 +546,7 @@
     }
   },
   "src/validator/utils.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/validator/utils.test.ts"
@@ -583,6 +592,7 @@
     }
   },
   "src/middleware/ip-restriction/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/ip-restriction/index.test.ts"
@@ -622,6 +632,7 @@
     }
   },
   "src/router/trie-router/node.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/router/trie-router/node.test.ts"
@@ -724,6 +735,7 @@
     }
   },
   "src/middleware/secure-headers/secure-headers.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/secure-headers/index.test.ts"
@@ -761,6 +773,7 @@
     }
   },
   "src/middleware/cors/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/cors/index.test.ts"
@@ -800,6 +813,7 @@
     }
   },
   "src/utils/buffer.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/utils/buffer.test.ts"
@@ -929,6 +943,7 @@
     }
   },
   "src/helper/ssg/utils.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/ssg/utils.test.ts"
@@ -974,6 +989,7 @@
     }
   },
   "src/utils/jwt/jws.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/jwk/index.test.ts",
@@ -1019,6 +1035,7 @@
     }
   },
   "src/utils/ipaddr.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/utils/ipaddr.test.ts"
@@ -1061,6 +1078,7 @@
     }
   },
   "src/adapter/aws-lambda/handler.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/aws-lambda/handler.test.ts"
@@ -1100,6 +1118,7 @@
     }
   },
   "src/router/reg-exp-router/trie.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 1,
@@ -1194,6 +1213,7 @@
     }
   },
   "src/router/linear-router/router.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/router/linear-router/router.test.ts"
@@ -1234,6 +1254,7 @@
     }
   },
   "src/router/smart-router/router.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/router/smart-router/router.test.ts"
@@ -1330,6 +1351,7 @@
     }
   },
   "src/middleware/language/language.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/language/index.test.ts"
@@ -1367,6 +1389,7 @@
     }
   },
   "src/middleware/compress/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/compress/index.test.ts"
@@ -1406,6 +1429,7 @@
     }
   },
   "src/router/reg-exp-router/prepared-router.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/router/reg-exp-router/prepared-router.test.ts"
@@ -1502,6 +1526,7 @@
     }
   },
   "src/router/reg-exp-router/router.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/router/reg-exp-router/router.test.ts"
@@ -1601,6 +1626,7 @@
     }
   },
   "src/middleware/cache/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/cache/index.test.ts"
@@ -1640,6 +1666,7 @@
     }
   },
   "src/helper/proxy/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/proxy/index.test.ts"
@@ -1679,6 +1706,7 @@
     }
   },
   "src/utils/mount.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 2,
@@ -1775,6 +1803,7 @@
     }
   },
   "src/client/client.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/client/client.test.ts",
@@ -1837,6 +1866,7 @@
     }
   },
   "src/helper/route/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/route/index.test.ts"
@@ -1939,6 +1969,7 @@
     }
   },
   "src/middleware/jwk/jwk.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/jwk/index.test.ts"
@@ -1976,6 +2007,7 @@
     }
   },
   "src/helper/streaming/sse.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/streaming/sse.test.tsx",
@@ -2021,6 +2053,7 @@
     }
   },
   "src/utils/cookie.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/client/client.test.ts",
@@ -2100,6 +2133,7 @@
     }
   },
   "src/hono-base.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 6,
@@ -2302,6 +2336,7 @@
     }
   },
   "src/client/utils.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/client/utils.test.ts"
@@ -2364,6 +2399,7 @@
     }
   },
   "src/helper/ssg/plugins.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/ssg/plugins.test.tsx"
@@ -2406,6 +2442,7 @@
     }
   },
   "src/helper/ssg/ssg.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/ssg/plugins.test.tsx",
@@ -2449,6 +2486,7 @@
     }
   },
   "src/middleware/method-not-allowed/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/method-not-allowed/index.test.ts"
@@ -2488,6 +2526,7 @@
     }
   },
   "src/context.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/cloudflare-workers/serve-static.test.ts",
@@ -2636,6 +2675,7 @@
     }
   },
   "src/middleware/trailing-slash/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/trailing-slash/index.test.ts"
@@ -2675,6 +2715,7 @@
     }
   },
   "src/router/reg-exp-router/node.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 2,
@@ -2768,6 +2809,7 @@
     }
   },
   "src/router/trie-router/router.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/router/trie-router/router.test.ts"
@@ -2869,6 +2911,7 @@
     }
   },
   "src/utils/stream.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/utils/stream.test.ts"
@@ -2920,6 +2963,7 @@
     }
   },
   "src/helper/streaming/utils.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 2,
@@ -2963,6 +3007,7 @@
     }
   },
   "src/compose.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/compose.test.ts"
@@ -3116,6 +3161,7 @@
     }
   },
   "src/helper/html/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/css/index.test.tsx",
@@ -3207,6 +3253,7 @@
     }
   },
   "src/utils/mime.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/utils/mime.test.ts"
@@ -3317,6 +3364,7 @@
     }
   },
   "src/middleware/request-id/request-id.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/request-id/index.test.ts"
@@ -3354,6 +3402,7 @@
     }
   },
   "src/middleware/csrf/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/csrf/index.test.ts"
@@ -3393,6 +3442,7 @@
     }
   },
   "src/utils/html.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/css/index.test.tsx",
@@ -3619,6 +3669,7 @@
     }
   },
   "src/utils/basic-auth.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/utils/basic-auth.test.ts"
@@ -3661,6 +3712,7 @@
     }
   },
   "src/utils/color.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/utils/color.test.ts"
@@ -3715,6 +3767,7 @@
     }
   },
   "src/middleware/jsx-renderer/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/jsx-renderer/index.test.tsx"
@@ -3754,6 +3807,7 @@
     }
   },
   "src/middleware/etag/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/etag/index.test.ts"
@@ -3793,6 +3847,7 @@
     }
   },
   "src/middleware/jwt/jwt.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/jwt/index.test.ts"
@@ -3830,6 +3885,7 @@
     }
   },
   "src/request.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/request.test.ts",
@@ -4012,6 +4068,7 @@
     }
   },
   "src/middleware/logger/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/hono.test.ts",
@@ -4055,6 +4112,7 @@
     }
   },
   "src/helper/css/common.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/css/index.test.tsx",
@@ -4096,6 +4154,7 @@
     }
   },
   "src/utils/body.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/utils/body.test.ts"
@@ -4222,6 +4281,7 @@
     }
   },
   "src/helper/ssg/middleware.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/ssg/ssg.test.tsx"
@@ -4262,6 +4322,7 @@
     }
   },
   "src/middleware/combine/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/combine/index.test.ts"
@@ -4301,6 +4362,7 @@
     }
   },
   "src/adapter/lambda-edge/handler.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/lambda-edge/conninfo.test.ts",
@@ -4343,6 +4405,7 @@
     }
   },
   "src/helper/accepts/accepts.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/accepts/accepts.test.ts"
@@ -4382,6 +4445,7 @@
     }
   },
   "src/utils/encode.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/lambda-edge/handler.test.ts",
@@ -4448,6 +4512,7 @@
     }
   },
   "src/helper/css/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/css/index.test.tsx",
@@ -4491,6 +4556,7 @@
     }
   },
   "src/middleware/serve-static/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/serve-static/index.test.ts"
@@ -4534,6 +4600,7 @@
     }
   },
   "src/helper/adapter/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/adapter/index.test.ts"
@@ -4582,6 +4649,7 @@
     }
   },
   "src/middleware/timeout/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/timeout/index.test.ts"
@@ -4621,6 +4689,7 @@
     }
   },
   "src/middleware/body-limit/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/aws-lambda/handler.test.ts",
@@ -4668,6 +4737,7 @@
     }
   },
   "src/middleware/method-override/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/method-override/index.test.ts"
@@ -4707,6 +4777,7 @@
     }
   },
   "src/adapter/cloudflare-workers/websocket.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -4740,6 +4811,7 @@
     }
   },
   "src/middleware/pretty-json/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/pretty-json/index.test.ts"
@@ -4779,6 +4851,7 @@
     }
   },
   "src/helper/websocket/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/websocket/index.test.ts"
@@ -4831,6 +4904,7 @@
     }
   },
   "src/adapter/deno/ssg.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -4860,6 +4934,7 @@
     }
   },
   "src/utils/concurrent.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/utils/concurrent.test.ts"
@@ -4905,6 +4980,7 @@
     }
   },
   "src/adapter/aws-lambda/conninfo.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/aws-lambda/conninfo.test.ts"
@@ -4944,6 +5020,7 @@
     }
   },
   "src/validator/validator.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/client/client.test.ts",
@@ -4995,6 +5072,7 @@
     }
   },
   "src/adapter/bun/conninfo.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/bun/conninfo.test.ts"
@@ -5034,6 +5112,7 @@
     }
   },
   "src/helper/streaming/stream.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/streaming/stream.test.ts",
@@ -5081,6 +5160,7 @@
     }
   },
   "src/router/pattern-router/router.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/router/pattern-router/router.test.ts"
@@ -5122,6 +5202,7 @@
     }
   },
   "src/middleware/mount/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/mount/index.test.ts",
@@ -5165,6 +5246,7 @@
     }
   },
   "src/adapter/cloudflare-workers/utils.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/cloudflare-workers/utils.test.ts"
@@ -5208,6 +5290,7 @@
     }
   },
   "src/utils/types.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/client/client.test.ts",
@@ -5288,6 +5371,7 @@
     }
   },
   "src/jsx/dom/components.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 3,
@@ -5372,6 +5456,7 @@
     }
   },
   "src/middleware/basic-auth/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/middleware/basic-auth/index.test.ts"
@@ -5411,6 +5496,7 @@
     }
   },
   "src/jsx/dom/render.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/jsx/dom/components.test.tsx",
@@ -5496,6 +5582,7 @@
     }
   },
   "src/adapter/bun/websocket.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/bun/websocket.test.ts"
@@ -5535,6 +5622,7 @@
     }
   },
   "src/jsx/dom/hooks/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/jsx/dom/hooks/index.test.tsx"
@@ -5623,6 +5711,7 @@
     }
   },
   "src/jsx/dom/intrinsic-element/components.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/jsx/dom/intrinsic-element/components.test.tsx"
@@ -5681,6 +5770,7 @@
     }
   },
   "src/jsx/base.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/css/index.test.tsx",
@@ -5774,6 +5864,7 @@
     }
   },
   "src/helper/factory/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/factory/index.test.ts",
@@ -5817,6 +5908,7 @@
     }
   },
   "src/jsx/constants.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/jsx/index.test.tsx",
@@ -5906,6 +5998,7 @@
     }
   },
   "src/jsx/jsx-runtime.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/jsx/jsx-runtime.test.tsx"
@@ -5945,6 +6038,7 @@
     }
   },
   "src/jsx/components.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/jsx/components.test.tsx"
@@ -6026,6 +6120,7 @@
     }
   },
   "src/client/fetch-result-please.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 1,
@@ -6069,6 +6164,7 @@
     }
   },
   "src/helper/testing/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/testing/index.test.ts",
@@ -6112,6 +6208,7 @@
     }
   },
   "src/jsx/utils.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/jsx/utils.test.ts"
@@ -6181,6 +6278,7 @@
     }
   },
   "src/adapter/aws-lambda/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -6210,6 +6308,7 @@
     }
   },
   "src/adapter/aws-lambda/types.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/aws-lambda/handler.test.ts"
@@ -6247,6 +6346,7 @@
     }
   },
   "src/adapter/cloudflare-pages/conninfo.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/cloudflare-pages/conninfo.test.ts"
@@ -6286,6 +6386,7 @@
     }
   },
   "src/adapter/cloudflare-pages/handler.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/cloudflare-pages/handler.test.ts"
@@ -6325,6 +6426,7 @@
     }
   },
   "src/adapter/cloudflare-pages/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -6354,6 +6456,7 @@
     }
   },
   "src/adapter/cloudflare-workers/conninfo.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/cloudflare-workers/conninfo.test.ts"
@@ -6394,6 +6497,7 @@
     }
   },
   "src/adapter/cloudflare-workers/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/cloudflare-workers/websocket.test.ts"
@@ -6431,6 +6535,7 @@
     }
   },
   "src/adapter/cloudflare-workers/serve-static.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/cloudflare-workers/serve-static.test.ts"
@@ -6471,6 +6576,7 @@
     }
   },
   "src/adapter/deno/conninfo.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/deno/conninfo.test.ts"
@@ -6510,6 +6616,7 @@
     }
   },
   "src/adapter/deno/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -6539,6 +6646,7 @@
     }
   },
   "src/adapter/deno/serve-static.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -6568,6 +6676,7 @@
     }
   },
   "src/adapter/deno/websocket.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/deno/websocket.test.ts",
@@ -6615,6 +6724,7 @@
     }
   },
   "src/adapter/lambda-edge/conninfo.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/lambda-edge/conninfo.test.ts"
@@ -6654,6 +6764,7 @@
     }
   },
   "src/adapter/lambda-edge/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -6683,6 +6794,7 @@
     }
   },
   "src/adapter/netlify/conninfo.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/netlify/conninfo.test.ts"
@@ -6722,6 +6834,7 @@
     }
   },
   "src/adapter/netlify/handler.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -6751,6 +6864,7 @@
     }
   },
   "src/adapter/netlify/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -6780,6 +6894,7 @@
     }
   },
   "src/adapter/service-worker/handler.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/service-worker/handler.test.ts"
@@ -6819,6 +6934,7 @@
     }
   },
   "src/adapter/service-worker/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -6848,6 +6964,7 @@
     }
   },
   "src/adapter/service-worker/types.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/service-worker/handler.test.ts"
@@ -6883,6 +7000,7 @@
     }
   },
   "src/adapter/vercel/conninfo.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/vercel/conninfo.test.ts"
@@ -6922,6 +7040,7 @@
     }
   },
   "src/adapter/vercel/handler.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/vercel/handler.test.ts"
@@ -6961,6 +7080,7 @@
     }
   },
   "src/adapter/vercel/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -6990,6 +7110,7 @@
     }
   },
   "src/adapter/bun/index.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -7019,6 +7140,7 @@
     }
   },
   "src/adapter/bun/serve-static.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -7048,6 +7170,7 @@
     }
   },
   "src/adapter/bun/server.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/bun/server.test.ts"
@@ -7093,6 +7216,7 @@
     }
   },
   "src/adapter/bun/ssg.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 0,
@@ -7122,6 +7246,7 @@
     }
   },
   "src/jsx/context.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/jsx/index.test.tsx",
@@ -7220,6 +7345,7 @@
     }
   },
   "src/jsx/streaming.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/helper/css/index.test.tsx",
@@ -7309,6 +7435,7 @@
     }
   },
   "src/types.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/adapter/cloudflare-workers/serve-static.test.ts",
@@ -7403,6 +7530,7 @@
     }
   },
   "src/jsx/dom/server.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [
         "src/jsx/dom/server.test.tsx"
@@ -7442,6 +7570,7 @@
     }
   },
   "src/jsx/intrinsic-element/components.ts": {
+    "node": "v24.21.0",
     "impact_d1": {
       "tests": [],
       "impactedFiles": 1,

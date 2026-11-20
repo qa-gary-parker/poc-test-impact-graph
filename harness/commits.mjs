@@ -3,7 +3,7 @@
 // Selections use the graph and import graph at the measured commit, not at each old commit.
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { HONO, RESULTS, readJson, sh, writeJson } from './lib.mjs';
+import { HONO, NODE, RESULTS, readJson, sh, writeJson } from './lib.mjs';
 import { selectFor } from './select.mjs';
 
 const COMMITS = Number(process.env.COMMITS ?? 100);
@@ -20,12 +20,12 @@ for (const sha of shas) {
   const authorTests = changed.filter((f) => suite.has(f));
   const arms = {};
   for (const f of code) {
-    const sel = selectFor(f);
+    const { node, ...sel } = selectFor(f);
     for (const [arm, v] of Object.entries(sel)) for (const t of v.tests ?? []) (arms[arm] ??= new Set()).add(t);
     for (const arm of Object.keys(sel)) arms[arm] ??= new Set();
   }
   const subject = sh(['git', 'log', '-1', '--format=%s', sha]).stdout.trim();
-  out.push({ sha, subject, code, authorTests, arms: Object.fromEntries(Object.entries(arms).map(([k, v]) => [k, [...v].sort()])) });
+  out.push({ node: NODE, sha, subject, code, authorTests, arms: Object.fromEntries(Object.entries(arms).map(([k, v]) => [k, [...v].sort()])) });
   console.log(`${out.length}/${COMMITS} ${sha.slice(0, 8)} ${code.length} code files, ${authorTests.length} test files`);
 }
 writeJson(join(RESULTS, 'commits.json'), out);

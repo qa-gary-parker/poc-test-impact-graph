@@ -2,7 +2,7 @@
 // code-review-graph `impact` with default settings at depth 1, 2 (default) and 3, `vitest related`, and the same-name test file.
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { HONO, RESULTS, crgJson, isSuiteFile, readJson, rel, runSuite, writeJson } from './lib.mjs';
+import { HONO, NODE, RESULTS, crgJson, isSuiteFile, readJson, rel, runSuite, writeJson } from './lib.mjs';
 
 const OUT = join(RESULTS, 'selections.json');
 const cache = readJson(OUT, {});
@@ -12,7 +12,7 @@ const NODE_LIMIT = readJson(join(RESULTS, 'env.json')).impactDefaults['--max-res
 
 export function selectFor(file) {
   if (cache[file]) return cache[file];
-  const entry = {};
+  const entry = { node: NODE };
   for (const depth of [1, 2, 3]) {
     // Only --depth is passed; every other setting is the tool's default (results/env.json).
     const r = crgJson(['impact', '--files', file, '--depth', String(depth)]);

@@ -1,7 +1,7 @@
 // For each mutant: apply it, run the whole suite (ground truth), ask the graph which tests cover the
 // changed function, then restore the file. Resumable: finished mutants in results/mutant-runs.jsonl are skipped.
 import { join } from 'node:path';
-import { RESULTS, crgJson, isSuiteFile, readJson, readJsonl, appendJsonl, rel, runSuite, sh, withMutant } from './lib.mjs';
+import { NODE, RESULTS, crgJson, isSuiteFile, readJson, readJsonl, appendJsonl, rel, runSuite, sh, withMutant } from './lib.mjs';
 
 const OUT = join(RESULTS, 'mutant-runs.jsonl');
 const { mutants } = readJson(join(RESULTS, 'mutants.json'));
@@ -24,6 +24,7 @@ for (const m of mutants) {
     }
     appendJsonl(OUT, {
       id: m.id,
+      node: NODE,
       timedOut: suite.timedOut,
       wallMs: suite.ms,
       failedTests: suite.numFailedTests ?? null,

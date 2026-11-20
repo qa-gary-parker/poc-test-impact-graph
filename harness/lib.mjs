@@ -10,6 +10,11 @@ export const HONO_SHA = 'a8ae5b1d6e8502ce61cd9e7b853d8107e377fc7b';
 export const CRG = ['uvx', '--python', '3.12', 'code-review-graph@2.4.0'];
 mkdirSync(RESULTS, { recursive: true });
 
+// Every step runs on the Node in .nvmrc and writes it into its results file.
+export const NODE = process.version;
+const PINNED = `v${readFileSync(join(ROOT, '.nvmrc'), 'utf8').trim()}`;
+if (NODE !== PINNED) throw new Error(`run with Node ${PINNED} (.nvmrc), not ${NODE}`);
+
 export function sh(argv, { cwd = HONO, timeout = 600_000, allowFail = true } = {}) {
   const t0 = Date.now();
   const r = spawnSync(argv[0], argv.slice(1), { cwd, encoding: 'utf8', timeout, maxBuffer: 256 * 1024 * 1024 });
@@ -28,8 +33,12 @@ export const appendJsonl = (p, v) => appendFileSync(p, `${JSON.stringify(v)}\n`)
 export function runSuite(extraArgs = [], { cmd = 'run', timeout = 180_000 } = {}) {
   const outFile = join(ROOT, 'work/vitest.json');
   rmSync(outFile, { force: true });
-  const r = sh([join(HONO, 'node_modules/.bin/vitest'), cmd, '--project', 'main', '--coverage.enabled=false', '--reporter=json', `--outputFile=${outFile}`, '--passWithNoTests', ...extraArgs], { timeout });
-  if (r.timedOut) return { timedOut: true, ms: r.ms };
+  const r = sh([process.execPath, join(HONO, 'node_modules/vitest/vitest.mjs'), cmd, '--project', 'main', '--coverage.enabled=false', '--reporter=json', `--outputFile=${outFile}`, '--passWithNoTests', ...extraArgs], { timeout });
+  if (r.timedOut) {
+    // The timeout kills only the vitest parent; its fork workers would keep running and load later runs.
+    sh(['/usr/bin/pkill', '-f', `${HONO}/node_modules/.*vitest/dist/workers`]);
+    return { timedOut: true, ms: r.ms };
+  }
   const j = readJson(outFile);
   if (!j) throw new Error(`vitest wrote no report (exit ${r.code}): ${r.stderr.slice(-1500)}`);
   const files = j.testResults.map((f) => ({
