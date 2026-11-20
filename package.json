@@ -8,6 +8,7 @@
   "engines": { "node": ">=24" },
   "scripts": {
     "setup": "bash harness/setup.sh",
+    "env": "node harness/env.mjs",
     "mutants": "node harness/mutants.mjs",
     "baseline": "node harness/baseline.mjs",
     "mutate": "node harness/mutate.mjs",

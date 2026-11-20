@@ -4,6 +4,7 @@ import { RESULTS, readJson, readJsonl, writeJson } from './lib.mjs';
 
 const ARMS = ['impact_d1', 'impact_d2', 'impact_d3', 'tests_for', 'vitest_related', 'same_name', 'full'];
 const baseline = readJson(join(RESULTS, 'baseline.json'));
+const env = readJson(join(RESULTS, 'env.json'));
 const { mutants, sites, filesScanned } = readJson(join(RESULTS, 'mutants.json'));
 const rawRuns = readJsonl(join(RESULTS, 'mutant-runs.jsonl'));
 const selections = readJson(join(RESULTS, 'selections.json'));
@@ -65,6 +66,10 @@ for (const arm of ARMS) {
   };
 }
 
+// Changed files of the caught faults where `impact` hit the tool's default node limit (results/env.json).
+const killedFiles = [...new Set(killed.map((r) => byId[r.id].file))].sort();
+const nodeLimitHit = Object.fromEntries([1, 2, 3].map((d) => [`impact_d${d}`, killedFiles.filter((f) => selections[f][`impact_d${d}`].nodeLimitHit)]));
+
 const commitArms = {};
 const withTests = commits.filter((c) => c.authorTests.length);
 for (const arm of ARMS) {
@@ -80,7 +85,7 @@ for (const arm of ARMS) {
 
 const summary = {
   target: { repo: 'honojs/hono', sha: baseline.honoSha, suiteFiles: suiteFiles.length, suiteTests: baseline.runs[0].tests, suiteWallMs: median(baseline.runs.map((r) => r.wallMs)), suiteFileMsTotal: totalMs },
-  tools: { 'code-review-graph': '2.4.0', vitest: '5.0.1', node: baseline.node },
+  tools: { 'code-review-graph': env['code-review-graph'], vitest: env.vitest, node: baseline.node, macOS: env.macOS },
   mutants: {
     filesScanned,
     sites,
@@ -92,10 +97,11 @@ const summary = {
     invalid,
     survived: runs.filter((r) => !r.timedOut && r.failing.length === 0).length,
     timedOut: runs.filter((r) => r.timedOut).length,
-    filesWithKilled: new Set(killed.map((r) => byId[r.id].file)).size,
+    filesWithKilled: killedFiles.length,
     medianFailingFiles: median(killed.map((r) => r.failing.length)),
     droppedAsFlaky,
   },
+  impact: { defaults: env.impactDefaults, nodeLimitHit },
   mutantArms,
   commits: { replayed: commits.length, withAuthorTests: withTests.length, arms: commitArms },
 };
@@ -109,6 +115,7 @@ for (const arm of ARMS) {
   const a = mutantArms[arm];
   console.log(`| ${arm} | ${a.caught} (${a.caughtPct}%) | ${a.complete} (${a.completePct}%) | ${a.medianFiles} | ${a.meanTimeSharePct}% |`);
 }
+console.log(`\nimpact node limit (default --max-results ${env.impactDefaults['--max-results']}) hit for the changed files of caught faults: ${Object.entries(nodeLimitHit).map(([arm, f]) => `${arm} ${f.length} of ${killedFiles.length}${f.length ? ` (${f.join(', ')})` : ''}`).join('; ')}`);
 if (commits.length) {
   console.log(`\nCommits replayed: ${commits.length}; with author test changes: ${withTests.length}\n`);
   console.log('| arm | median test files | mean share of suite time | empty | author tests all selected |');

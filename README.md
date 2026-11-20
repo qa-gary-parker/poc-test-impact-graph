@@ -9,14 +9,14 @@
 ## Method
 
 - Target: [honojs/hono](https://github.com/honojs/hono) at `a8ae5b1d`. The suite is Vitest project `main`, test files under `src/`: 123 files and 5,110 tests, about 4.8 s wall-clock. `build/` tests need a compiled package and are not part of it.
-- Tools: `code-review-graph` 2.4.0 (graph built once at the measured commit), Vitest 5.0.1, Node 24.21.0, macOS 15.7.4.
+- Tools: `code-review-graph` 2.4.0 (graph built once at the measured commit), Vitest 5.0.1, Node 24.21.0, macOS 15.7.4 on arm64. `npm run env` reads each version from the installed tool into `results/env.json`; `results/baseline.json` also records the Node version of the baseline runs. This repo has no dependencies and no lockfile of its own: hono's `pnpm-lock.yaml` at `a8ae5b1d` pins Vitest (installed with `--frozen-lockfile`), and `harness/lib.mjs` pins `code-review-graph@2.4.0`.
 - Faults: `harness/mutants.mjs` finds 1,373 operator sites in 155 source files under `src/` (not `src/jsx/`, not type files). It swaps one operator per fault: `===`/`!==`, `&&`/`||`, `<`/`<=`, `>`/`>=`, `+ 1`/`- 1`, `true`/`false`. It draws 300 with seed 6, at most 6 per file.
 - Ground truth: `harness/mutate.mjs` applies each fault and runs the whole suite. The test files that fail are the files a selector must pick. `harness/confirm.mjs` runs those files again on their own with the fault applied, keeps only the files that fail again, and records how each one failed: failed tests, or an error at file level (parse or collection) with no failed test. A failing test file is a file with a failed test or a file-level error; both make CI red. A fault whose failing files show only a parse error did not compile. It is excluded, like a timeout.
 - Selectors, given the changed file:
 
 | arm | what it picks |
 |---|---|
-| impact_d1, impact_d2, impact_d3 | test files in `code-review-graph impact --files <file> --depth N` (2 is the default) |
+| impact_d1, impact_d2, impact_d3 | test files in `code-review-graph impact --files <file> --depth N`. No other flag is passed, so every other setting is the tool's default. `results/env.json` records the defaults read from the installed package: depth 2, node limit (`--max-results`) 500, `--detail-level standard` |
 | tests_for | test files from `code-review-graph query tests_for` for each function `detect-changes` reports as changed |
 | vitest_related | test files `vitest related <file>` runs |
 | same_name | `<file>.test.ts`, if it exists |
@@ -56,7 +56,7 @@ Commit replay (100 commits; 88 changed test files too):
 - Fault #295 (`src/middleware/jwk/jwk.ts`, `||` to `&&`) failed no test. `jwk()` now throws its "requires options" error when a test file calls it while Vitest collects the tests, so `src/middleware/jwk/index.test.ts` fails with 0 tests run. It counts as caught: CI goes red.
 - Fault #74 (`src/context.ts:583`) swapped the `>` that closes a type parameter list, not an operator. The file no longer parses, and 74 test files failed to load with 0 failed tests. It is excluded.
 - `tests_for` returned no tests for 58 of the 237 faults. For 4 of them `detect-changes` reported no changed function.
-- At depth 3, `impact` hit its default node limit for 4 files (`src/context.ts` at every depth).
+- `impact` stops at its default node limit of 500 impacted nodes. Among the 73 changed files of caught faults, it hit that limit for 4 at depth 3 (`src/context.ts`, `src/request.ts`, `src/utils/mime.ts`, `src/utils/url.ts`) and for 1 at depth 1 and 2 (`src/context.ts`). `npm run summary` prints this, and `results/summary.json` holds it under `impact`.
 
 ## Limits
 
@@ -71,7 +71,7 @@ Commit replay (100 commits; 88 changed test files too):
 Needs Node 24, `uv`, and git.
 
 ```bash
-npm run setup      # clone hono at a8ae5b1d into work/, install, build the graph
+npm run setup      # clone hono at a8ae5b1d into work/, install, build the graph, write results/env.json
 npm run mutants    # results/mutants.json
 npm run baseline   # results/baseline.json
 npm run mutate     # results/mutant-runs.jsonl (about 45 min)

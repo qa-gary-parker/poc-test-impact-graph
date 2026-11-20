@@ -11,3 +11,5 @@ cd work/hono
 git checkout -q "$SHA"
 npx -y pnpm@12.6.0 install --frozen-lockfile
 uvx --python 3.12 code-review-graph@2.4.0 build
+cd ../..
+node harness/env.mjs

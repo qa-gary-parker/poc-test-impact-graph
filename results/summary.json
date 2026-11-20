@@ -10,7 +10,8 @@
   "tools": {
     "code-review-graph": "2.4.0",
     "vitest": "5.0.1",
-    "node": "v24.21.0"
+    "node": "v24.21.0",
+    "macOS": "15.7.4 (24G517)"
   },
   "mutants": {
     "filesScanned": 155,
@@ -56,6 +57,28 @@
         "stillKilled": false
       }
     ]
+  },
+  "impact": {
+    "defaults": {
+      "--depth": 2,
+      "--max-results": 500,
+      "--detail-level": "standard",
+      "--max-files": 25
+    },
+    "nodeLimitHit": {
+      "impact_d1": [
+        "src/context.ts"
+      ],
+      "impact_d2": [
+        "src/context.ts"
+      ],
+      "impact_d3": [
+        "src/context.ts",
+        "src/request.ts",
+        "src/utils/mime.ts",
+        "src/utils/url.ts"
+      ]
+    }
   },
   "mutantArms": {
     "impact_d1": {
