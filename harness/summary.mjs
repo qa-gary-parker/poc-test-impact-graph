@@ -9,7 +9,15 @@ const rawRuns = readJsonl(join(RESULTS, 'mutant-runs.jsonl'));
 const selections = readJson(join(RESULTS, 'selections.json'));
 const commits = readJson(join(RESULTS, 'commits.json'), []);
 const confirmed = readJson(join(RESULTS, 'confirm.json'));
-const runs = rawRuns.map((r) => (r.timedOut || !r.failing.length ? r : { ...r, unconfirmed: r.failing.filter((f) => !confirmed[r.id].includes(f)), failing: confirmed[r.id] }));
+const confirmedRuns = rawRuns.map((r) => {
+  if (r.timedOut || !r.failing.length) return r;
+  const c = confirmed[r.id];
+  return { ...r, unconfirmed: r.failing.filter((f) => !c.files.includes(f)), failing: c.files, failedTests: c.failedTests, fileErrors: c.fileErrors };
+});
+// A mutant whose failing files only report a parse error did not compile: not a fault, excluded like a timeout.
+const isParseError = (r) => r.failing?.length > 0 && r.failedTests === 0 && Object.values(r.fileErrors).every((e) => /PARSE_ERROR|Transform failed/.test(e ?? ''));
+const invalid = confirmedRuns.filter(isParseError).map((r) => ({ id: r.id, error: Object.values(r.fileErrors)[0] }));
+const runs = confirmedRuns.filter((r) => !isParseError(r));
 
 const suiteFiles = Object.keys(baseline.files);
 const totalMs = suiteFiles.reduce((a, f) => a + baseline.files[f].ms, 0);
@@ -77,8 +85,11 @@ const summary = {
     filesScanned,
     sites,
     sampled: mutants.length,
-    ran: runs.length,
+    ran: confirmedRuns.length,
     killed: killed.length,
+    killedByFailedTest: killed.filter((r) => r.failedTests > 0).length,
+    killedByFileErrorOnly: killed.filter((r) => r.failedTests === 0).map((r) => ({ id: r.id, files: r.failing, errors: r.fileErrors })),
+    invalid,
     survived: runs.filter((r) => !r.timedOut && r.failing.length === 0).length,
     timedOut: runs.filter((r) => r.timedOut).length,
     filesWithKilled: new Set(killed.map((r) => byId[r.id].file)).size,
@@ -90,7 +101,8 @@ const summary = {
 };
 writeJson(join(RESULTS, 'summary.json'), summary);
 
-console.log(`Killed mutants: ${killed.length} of ${runs.length} (survived ${summary.mutants.survived}, timed out ${summary.mutants.timedOut})\n`);
+const m = summary.mutants;
+console.log(`Killed mutants: ${killed.length} of ${m.ran} (${m.killedByFailedTest} by a failed test, ${m.killedByFileErrorOnly.length} by a file-level error only; survived ${m.survived}, timed out ${m.timedOut}, did not parse ${invalid.length})\n`);
 console.log('| arm | caught | all failing files selected | median test files | mean share of suite time |');
 console.log('|---|---|---|---|---|');
 for (const arm of ARMS) {

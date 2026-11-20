@@ -37,6 +37,7 @@ export function runSuite(extraArgs = [], { cmd = 'run', timeout = 180_000 } = {}
     status: f.status,
     ms: (f.endTime ?? 0) - (f.startTime ?? 0),
     failedTests: f.assertionResults.filter((a) => a.status === 'failed').length,
+    error: f.message ? f.message.replace(/\x1b\[[0-9;]*m/g, '').split('\n')[0].slice(0, 200) : null,
   }));
   return { timedOut: false, ms: r.ms, numTotalTests: j.numTotalTests, numFailedTests: j.numFailedTests, files };
 }

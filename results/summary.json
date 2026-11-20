@@ -17,7 +17,25 @@
     "sites": 1373,
     "sampled": 300,
     "ran": 300,
-    "killed": 238,
+    "killed": 237,
+    "killedByFailedTest": 236,
+    "killedByFileErrorOnly": [
+      {
+        "id": 295,
+        "files": [
+          "src/middleware/jwk/index.test.ts"
+        ],
+        "errors": {
+          "src/middleware/jwk/index.test.ts": "JWK auth middleware requires options for either \"keys\" or \"jwks_uri\" or both"
+        }
+      }
+    ],
+    "invalid": [
+      {
+        "id": 74,
+        "error": "Transform failed with 1 error:"
+      }
+    ],
     "survived": 61,
     "timedOut": 1,
     "filesWithKilled": 73,
@@ -41,10 +59,10 @@
   },
   "mutantArms": {
     "impact_d1": {
-      "caught": 220,
+      "caught": 219,
       "caughtPct": 92.4,
       "complete": 162,
-      "completePct": 68.1,
+      "completePct": 68.4,
       "emptySelections": 18,
       "medianFiles": 1,
       "meanTimeSharePct": 1.1,
@@ -70,10 +88,10 @@
       ]
     },
     "impact_d2": {
-      "caught": 237,
+      "caught": 236,
       "caughtPct": 99.6,
       "complete": 198,
-      "completePct": 83.2,
+      "completePct": 83.5,
       "emptySelections": 1,
       "medianFiles": 2,
       "meanTimeSharePct": 3.6,
@@ -82,10 +100,10 @@
       ]
     },
     "impact_d3": {
-      "caught": 237,
+      "caught": 236,
       "caughtPct": 99.6,
       "complete": 203,
-      "completePct": 85.3,
+      "completePct": 85.7,
       "emptySelections": 1,
       "medianFiles": 2,
       "meanTimeSharePct": 5.1,
@@ -94,13 +112,13 @@
       ]
     },
     "tests_for": {
-      "caught": 147,
-      "caughtPct": 61.8,
+      "caught": 146,
+      "caughtPct": 61.6,
       "complete": 104,
-      "completePct": 43.7,
+      "completePct": 43.9,
       "emptySelections": 58,
       "medianFiles": 1,
-      "meanTimeSharePct": 1.2,
+      "meanTimeSharePct": 1.1,
       "missedIds": [
         3,
         7,
@@ -196,23 +214,23 @@
       ]
     },
     "vitest_related": {
-      "caught": 238,
+      "caught": 237,
       "caughtPct": 100,
-      "complete": 238,
+      "complete": 237,
       "completePct": 100,
       "emptySelections": 0,
       "medianFiles": 3,
-      "meanTimeSharePct": 18.5,
+      "meanTimeSharePct": 18.3,
       "missedIds": []
     },
     "same_name": {
-      "caught": 191,
-      "caughtPct": 80.3,
+      "caught": 190,
+      "caughtPct": 80.2,
       "complete": 117,
-      "completePct": 49.2,
+      "completePct": 49.4,
       "emptySelections": 42,
       "medianFiles": 1,
-      "meanTimeSharePct": 0.5,
+      "meanTimeSharePct": 0.6,
       "missedIds": [
         4,
         14,
@@ -264,9 +282,9 @@
       ]
     },
     "full": {
-      "caught": 238,
+      "caught": 237,
       "caughtPct": 100,
-      "complete": 238,
+      "complete": 237,
       "completePct": 100,
       "emptySelections": 0,
       "medianFiles": 123,
