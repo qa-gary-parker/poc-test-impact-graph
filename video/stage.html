@@ -1,0 +1,209 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=block');
+:root{--ink:#0B0D0C;--panel:#111412;--fg:#E6E8E3;--muted:#8A9088;--pass:#3FB950;--fail:#F85149;--warn:#F2C94C;--blue:#58A6FF;--line:#262A27}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--ink);color:var(--fg);font-family:'IBM Plex Sans',sans-serif}
+.mono{font-family:'JetBrains Mono',monospace}
+#top{position:absolute;left:0;right:0;top:0;height:72px;display:flex;align-items:center;gap:18px;padding:0 48px;border-bottom:1px solid var(--line);font:700 26px 'JetBrains Mono',monospace}
+#top i{width:16px;height:16px;border-radius:8px;background:var(--pass)}
+#chapn{color:var(--pass)}
+#top .right{margin-left:auto;color:var(--muted);font-weight:400}
+#main{position:absolute;left:0;right:0;top:72px;bottom:104px;padding:32px 48px;display:flex;gap:28px}
+#cap{position:absolute;left:0;right:0;bottom:0;height:104px;display:flex;align-items:center;justify-content:center;padding:0 48px;border-top:1px solid var(--pass);font:700 40px/1.2 'JetBrains Mono',monospace;text-align:center}
+.pane{flex:1;min-width:0;display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;animation:in .35s both}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.bar{display:flex;align-items:center;gap:14px;height:62px;flex:none;padding:0 22px;border-bottom:1px solid var(--line);font:700 24px 'JetBrains Mono',monospace}
+.bar .tag{padding:4px 12px;border-radius:8px;background:#1B211D}
+.bar .tok{margin-left:auto;color:var(--warn)}
+.body{flex:1;overflow:hidden;padding:18px 24px;font:400 24px/1.45 'JetBrains Mono',monospace}
+.big .body{font-size:36px;padding:36px 44px}
+.big .cmd{margin-top:22px}
+.dense .body{font-size:19px}
+.body div{white-space:pre-wrap;word-break:break-word;min-height:1.45em}
+.cmd{color:var(--fg);font-weight:700;margin-top:10px}
+.cmd::before{content:'$ ';color:var(--pass)}
+.cmd.call::before{content:'→ ';color:var(--blue)}
+.o{color:#AEB4AB}
+.add{color:var(--warn);font-weight:700}
+.hl{background:#1F3A22;color:#fff;box-shadow:-24px 0 0 #1F3A22,24px 0 0 #1F3A22}
+.shot{flex:0 0 44%;align-self:center}
+.shot .url{font-weight:400;color:var(--muted);font-size:21px}
+.shot img{width:100%;display:block}
+.card{flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 80px;animation:in .35s both}
+.card h1{font:700 68px/1.1 'JetBrains Mono',monospace;letter-spacing:-.03em}
+.card h2{font:600 44px/1.25 'IBM Plex Sans',sans-serif;margin-top:28px}
+.card p{font:400 36px/1.4 'IBM Plex Sans',sans-serif;color:var(--muted);margin-top:26px}
+.card blockquote{font:400 42px/1.45 'IBM Plex Sans',sans-serif;border-left:6px solid var(--pass);padding-left:36px}
+.card .src{font:400 26px 'JetBrains Mono',monospace;color:var(--muted);margin-top:30px}
+.card li{list-style:none;font:600 40px/1.3 'IBM Plex Sans',sans-serif;margin-top:30px;padding-left:64px;position:relative;animation:in .35s both}
+.card li b{position:absolute;left:0;color:var(--pass);font-family:'JetBrains Mono',monospace}
+.card li span{display:block;font:400 28px/1.35 'JetBrains Mono',monospace;color:var(--muted);margin-top:8px}
+mark{background:none;color:var(--muted);transition:color .4s,background .4s;padding:2px 6px;border-radius:6px}
+mark.on{background:#1F3A22;color:#fff}
+.g{color:var(--pass)}.r{color:var(--fail)}.w{color:var(--warn)}.b{color:var(--blue)}.m{color:var(--muted)}
+.cols{display:flex;gap:28px;margin-top:44px}
+.col{flex:1;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:30px 32px}
+.col b{display:block;font:700 46px 'JetBrains Mono',monospace}
+.col span{display:block;font:400 28px/1.35 'IBM Plex Sans',sans-serif;color:var(--muted);margin-top:12px}
+.chart{flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 40px;animation:in .35s both}
+.chart h3{font:700 48px 'JetBrains Mono',monospace;margin-bottom:8px}
+.chart .sub{font:400 30px 'IBM Plex Sans',sans-serif;color:var(--muted);margin-bottom:20px}
+.row{display:flex;align-items:center;gap:24px;margin-top:12px;font:700 32px 'JetBrains Mono',monospace;animation:in .35s both}
+.row .lab{flex:0 0 480px;font-weight:400}
+.row .track{flex:1;height:40px}
+.row .fill{height:100%;width:0;border-radius:6px;transition:width .9s cubic-bezier(.2,.7,.2,1);min-width:4px}
+.row .val{flex:0 0 230px;text-align:right}
+.group{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font:700 26px 'JetBrains Mono',monospace;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.code .body div{white-space:pre}
+.shot img{image-rendering:auto}
+.shot .pic{position:relative}
+.shot.wide{flex:none;margin:0 auto}
+.shot.wide img{width:auto;height:auto;max-width:1822px;max-height:776px}
+.ring{position:absolute;border:4px solid var(--warn);border-radius:10px;box-shadow:0 0 0 9999px rgba(11,13,12,.55);animation:in .35s both}
+.stack{flex:1;height:40px;display:flex;gap:3px}
+.stack div{height:100%;width:0;transition:width .9s cubic-bezier(.2,.7,.2,1);border-radius:4px}
+.key{display:flex;gap:36px;margin-top:22px;font:400 26px 'IBM Plex Sans',sans-serif;color:var(--muted)}
+.key i{display:inline-block;width:20px;height:20px;border-radius:4px;margin-right:10px;vertical-align:-3px}
+.seq{display:flex;align-items:center;gap:8px;margin-top:14px;font:700 30px 'JetBrains Mono',monospace;animation:in .35s both}
+.seq .lab{flex:0 0 150px;font-weight:400;color:var(--muted)}
+.seq i{font-style:normal;flex:0 0 72px;height:58px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.seq i.d{border-color:var(--warn);background:#2A2614}
+.tbl{width:100%;border-collapse:collapse;margin-top:26px;font:400 30px 'JetBrains Mono',monospace}
+.tbl th{font:600 24px 'IBM Plex Sans',sans-serif;color:var(--muted);text-align:right;padding:8px 18px;border-bottom:1px solid var(--line)}
+.tbl td{text-align:right;padding:11px 18px;border-bottom:1px solid var(--line);transition:background .4s,color .4s}
+.tbl th:first-child,.tbl td:first-child{text-align:left}
+.tbl tr.on td{background:#1F3A22;color:#fff}
+.tbl tr.dim td{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(41,1fr);gap:7px;margin-top:26px}
+.grid i{aspect-ratio:1;border-radius:4px;background:var(--line);transition:background .4s,box-shadow .4s}
+.grid i.F{background:var(--fail)}
+.grid i.P{box-shadow:0 0 0 4px var(--blue) inset}
+.grid i.F.P{background:var(--fail);box-shadow:0 0 0 5px #fff inset}
+#end{position:absolute;inset:0;background:var(--ink);padding:112px 128px;font:36px/1.3 'JetBrains Mono',monospace;display:none}
+#end .k{margin-top:52px;color:var(--muted);font-size:24px;letter-spacing:.12em;text-transform:uppercase}
+#end .v{margin-top:16px;white-space:pre-line}
+#end .brand{display:flex;align-items:center;gap:16px;color:var(--pass);font-size:30px;margin-bottom:72px}
+#end .brand i{width:20px;height:20px;border-radius:10px;background:var(--pass)}
+#end .sum{position:absolute;left:128px;bottom:96px;color:var(--muted);font-size:26px}
+</style></head><body>
+<div id="top"><i></i><span id="chapn"></span><span id="chap"></span><span class="right">hono · code-review-graph 2.4.0 · Vitest 5.0.1</span></div>
+<div id="main"></div>
+<div id="cap"></div>
+<div id="end"></div>
+<script>
+const main = document.getElementById('main');
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const fmt = (n) => n.toLocaleString('en-US');
+const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html !== undefined) e.innerHTML = html; return e; };
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const panes = {};
+const COLORS = { pass: '#3FB950', fail: '#F85149', warn: '#F2C94C', blue: '#58A6FF', muted: '#8A9088' };
+
+async function count(node, from, to, ms, prefix = '') {
+  const t0 = performance.now();
+  while (true) {
+    const k = Math.min(1, (performance.now() - t0) / ms);
+    const v = from + (to - from) * k;
+    node.textContent = prefix + (Number.isInteger(to) ? fmt(Math.round(v)) : v.toFixed(1));
+    if (k === 1) return;
+    await sleep(40);
+  }
+}
+
+window.S = {
+  chapter(n, title) { document.getElementById('chapn').textContent = String(n).padStart(2, '0'); document.getElementById('chap').textContent = title; },
+  caption(t) { document.getElementById('cap').textContent = t; },
+  clear() { main.innerHTML = ''; for (const k in panes) delete panes[k]; },
+  term(id, tag, color, cls) {
+    const p = el('div', 'pane' + (cls ? ' ' + cls : ''));
+    p.innerHTML = `<div class="bar"><span class="tag" style="color:${COLORS[color]}">${tag}</span><span class="tok"></span></div><div class="body"></div>`;
+    main.appendChild(p);
+    panes[id] = { body: p.querySelector('.body'), tok: p.querySelector('.tok'), total: 0 };
+  },
+  shot(src, url, cls) {
+    const p = el('div', 'pane shot' + (cls ? ' ' + cls : ''));
+    p.innerHTML = `<div class="bar"><span class="url">${url}</span></div><div class="pic"><img src="${src}"></div>`;
+    main.appendChild(p);
+  },
+  wipe(id) { panes[id].body.innerHTML = ''; panes[id].total = 0; panes[id].tok.textContent = ''; },
+  async type(id, text, call) {
+    const { body } = panes[id];
+    const line = body.appendChild(el('div', 'cmd' + (call ? ' call' : '')));
+    body.scrollTop = body.scrollHeight;
+    for (const ch of text) { line.textContent += ch; await sleep(22); }
+    body.scrollTop = body.scrollHeight;
+  },
+  // Called before each step: the step's first mark clears the marks of earlier steps
+  fresh() { window.freshMarks = true; },
+  mark(id, needle) {
+    if (window.freshMarks) { main.querySelectorAll('.hl').forEach((l) => l.classList.remove('hl')); window.freshMarks = false; }
+    const { body } = panes[id];
+    const line = [...body.children].reverse().find((d) => d.textContent.includes(needle));
+    if (!line) throw new Error('no line with ' + needle);
+    line.classList.add('hl');
+    body.scrollTop = Math.max(0, line.offsetTop - body.offsetTop - body.clientHeight / 2);
+  },
+  // Plain text lines in a pane, no token counter
+  code(id, text, cls) {
+    const p = panes[id];
+    for (const l of text.replace(/\n+$/, '').split('\n')) p.body.appendChild(el('div', cls || 'o')).textContent = l;
+    p.body.scrollTop = p.body.scrollHeight;
+  },
+  label(id, text, color) { panes[id].tok.innerHTML = `<span style="color:${COLORS[color] || color}">${text}</span>`; },
+  // Box [x, y, w, h] in % of the last screenshot; dims the rest. Replaces the previous ring.
+  ring(box, color) {
+    const pics = main.querySelectorAll('.pic');
+    const pic = pics[pics.length - 1];
+    pic.querySelectorAll('.ring').forEach((r) => r.remove());
+    const r = pic.appendChild(el('div', 'ring'));
+    Object.assign(r.style, { left: box[0] + '%', top: box[1] + '%', width: box[2] + '%', height: box[3] + '%', borderColor: COLORS[color] || COLORS.warn });
+  },
+  // Highlights line n (0-based) of a pane, for repeated lines that a needle cannot tell apart
+  markn(id, n) {
+    if (window.freshMarks) { main.querySelectorAll('.hl').forEach((l) => l.classList.remove('hl')); window.freshMarks = false; }
+    panes[id].body.children[n].classList.add('hl');
+  },
+  // Rows of numbered cells: [label, [[text, color, differs], ...]]
+  seq(title, sub, rows) {
+    const c = el('div', 'chart', `<h3>${title}</h3><div class="sub">${sub}</div>`);
+    for (const [label, cells] of rows) c.appendChild(el('div', 'seq', `<span class="lab">${label}</span>` + cells.map(([t, col, d]) => `<i class="${d ? 'd' : ''}" style="color:${COLORS[col]}">${t}</i>`).join('')));
+    main.appendChild(c);
+  },
+  card(html) { main.appendChild(el('div', 'card', html)); },
+  drop(sel) { document.querySelectorAll(sel).forEach((e) => e.remove()); },
+  on(sel) { document.querySelectorAll(sel).forEach((e) => e.classList.add('on')); },
+  append(sel, html) { document.querySelector(sel).insertAdjacentHTML('beforeend', html); },
+  chart(title, sub) { main.appendChild(el('div', 'chart', `<h3>${title}</h3><div class="sub">${sub}</div>`)); },
+  group(text) { main.querySelector('.chart').appendChild(el('div', 'group', text)); },
+  async bar(label, value, max, color, note) {
+    const row = el('div', 'row', `<span class="lab">${label}</span><span class="track"><div class="fill" style="background:${COLORS[color]}"></div></span><span class="val">0</span>`);
+    main.querySelector('.chart').appendChild(row);
+    await sleep(60);
+    row.querySelector('.fill').style.width = (value / max) * 100 + '%';
+    await count(row.querySelector('.val'), 0, value, 900);
+    if (note) row.querySelector('.val').innerHTML = `${fmt(value)} <span class="w">${note}</span>`;
+  },
+  // One row of stacked parts: [[value, color], ...], scaled to max
+  async stack(label, parts, max, note) {
+    const row = el('div', 'row', `<span class="lab">${label}</span><span class="stack">${parts.map(([, c]) => `<div style="background:${COLORS[c]}"></div>`).join('')}</span><span class="val">0</span>`);
+    main.querySelector('.chart').appendChild(row);
+    await sleep(60);
+    row.querySelectorAll('.stack div').forEach((d, i) => { d.style.width = (parts[i][0] / max) * 100 + '%'; });
+    await count(row.querySelector('.val'), 0, parts.reduce((a, [v]) => a + v, 0), 900);
+    if (note) row.querySelector('.val').innerHTML += ` <span class="w">${note}</span>`;
+  },
+  key(items) { main.querySelector('.chart').appendChild(el('div', 'key', items.map(([t, c]) => `<span><i style="background:${COLORS[c]}"></i>${t}</span>`).join(''))); },
+  // The right half stays empty for YouTube's end-screen elements
+  // One cell per test file: F = fails (red), P = picked by the selector (outlined)
+  grid(n) { const g = el('div', 'grid', '<i></i>'.repeat(n)); (main.querySelector('.chart') || main).appendChild(g); },
+  paint(idx, cls) { const cells = main.querySelectorAll('.grid i'); for (const i of idx) cells[i].classList.add(cls); },
+  unpaint(cls) { main.querySelectorAll('.grid i.' + cls).forEach((c) => c.classList.remove(cls)); },
+  end(rows, summary) {
+    const e = document.getElementById('end');
+    e.innerHTML = '<div class="brand"><i></i>gary-parker</div>' + rows.map(([k, v]) => `<div class="k">${k}</div><div class="v">${esc(v)}</div>`).join('') + `<div class="sum">${summary}</div>`;
+    e.style.display = 'block';
+  },
+};
+</script>
+</body></html>

@@ -16,5 +16,6 @@
     "select": "node harness/select.mjs",
     "commits": "node harness/commits.mjs",
     "summary": "node harness/summary.mjs"
-  }
+  },
+  "devDependencies": { "@playwright/test": "1.65.1" }
 }
