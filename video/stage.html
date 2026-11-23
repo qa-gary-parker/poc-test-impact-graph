@@ -181,8 +181,7 @@ window.S = {
     main.querySelector('.chart').appendChild(row);
     await sleep(60);
     row.querySelector('.fill').style.width = (value / max) * 100 + '%';
-    await count(row.querySelector('.val'), 0, value, 900);
-    if (note) row.querySelector('.val').innerHTML = `${fmt(value)} <span class="w">${note}</span>`;
+    count(row.querySelector('.val'), 0, value, 900).then(() => { if (note) row.querySelector('.val').innerHTML = `${fmt(value)} <span class="w">${note}</span>`; });
   },
   // One row of stacked parts: [[value, color], ...], scaled to max
   async stack(label, parts, max, note) {
@@ -190,8 +189,7 @@ window.S = {
     main.querySelector('.chart').appendChild(row);
     await sleep(60);
     row.querySelectorAll('.stack div').forEach((d, i) => { d.style.width = (parts[i][0] / max) * 100 + '%'; });
-    await count(row.querySelector('.val'), 0, parts.reduce((a, [v]) => a + v, 0), 900);
-    if (note) row.querySelector('.val').innerHTML += ` <span class="w">${note}</span>`;
+    count(row.querySelector('.val'), 0, parts.reduce((a, [v]) => a + v, 0), 900).then(() => { if (note) row.querySelector('.val').innerHTML += ` <span class="w">${note}</span>`; });
   },
   key(items) { main.querySelector('.chart').appendChild(el('div', 'key', items.map(([t, c]) => `<span><i style="background:${COLORS[c]}"></i>${t}</span>`).join(''))); },
   // The right half stays empty for YouTube's end-screen elements
