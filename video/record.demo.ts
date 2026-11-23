@@ -217,7 +217,6 @@ const SPOKEN: [string, unknown, unknown][] = [
   ['impact d1 empty', A.impact_d1.empty, 18],
   ['impact d1: every miss is an empty pick', A.impact_d1.rows.filter((x) => !x.caught).every((x) => x.files === 0), true],
   ['impact d3 picked all, more than d2', A.impact_d3.complete - A.impact_d2.complete, 5],
-  ['impact d3 points more', p1(A.impact_d3.meanShare - A.impact_d2.meanShare), '1.5'],
   ['impact d3 share', p1(A.impact_d3.meanShare), '5.0'],
   ['impact d2 and d3 missed the same fault', [A.impact_d2.rows.filter((x) => !x.caught).map((x) => x.id), A.impact_d3.rows.filter((x) => !x.caught).map((x) => x.id)], [[218], [218]]],
   // The one miss
@@ -273,7 +272,7 @@ function speech(text: string) {
 type Stage = (fn: string, ...args: unknown[]) => Promise<void>;
 type Step = { ch?: string; cap: string; say: string; act?: (S: Stage, page: Page) => Promise<unknown> };
 const bars = async (S: Stage, arms: Arm[], value: (a: Arm) => number, max: number, note: string) => {
-  for (const a of arms) await S('bar', NAME[a], value(a), max, COLOR[a], note);
+  await Promise.all(arms.map((a) => S('bar', NAME[a], value(a), max, COLOR[a], note)));
 };
 const faultGrid = async (S: Stage, title: string, sub: string, f: Fault, arm?: Arm) => {
   await S('clear');
@@ -674,15 +673,15 @@ const steps: Step[] = [
     act: async (S) => {
       await S('clear');
       await S('chart', 'impact by depth', `${FAULTS.length} faults`);
-      for (const d of [1, 2, 3] as const) {
+      await Promise.all(([1, 2, 3] as const).map((d) => {
         const a = A[`impact_d${d}`];
-        await S('stack', `depth ${d}${d === 2 ? ' (default)' : ''}`, [[a.complete, 'pass'], [a.caught - a.complete, 'warn']], FAULTS.length, `· ${p1(a.meanShare)}%`);
-      }
+        return S('stack', `depth ${d}${d === 2 ? ' (default)' : ''}`, [[a.complete, 'pass'], [a.caught - a.complete, 'warn']], FAULTS.length, `· ${p1(a.meanShare)}%`);
+      }));
       await S('key', [['picked all', 'pass'], ['caught, partial', 'warn']]);
     },
   },
   {
-    cap: 'Depth 3: picked all for 5 more faults, at 1.5 points more suite time',
+    cap: 'Depth 3: picked all for 5 more faults, at 5.0% of suite time against 3.4%',
     say: 'Depth three picked all the failing files for five more faults than depth two. That cost five percent of the suite time, against three point four.',
   },
   {
