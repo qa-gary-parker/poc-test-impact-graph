@@ -84,3 +84,12 @@ npm run summary    # results/summary.json
 ## License
 
 MIT
+
+<!-- links:start -->
+## Links
+
+- Write-up: [Code Graph Test Selection: 99.6% of Faults Caught, 3.4% of Suite Time](https://garyparker.dev/blog/code-graph-test-impact-analysis)
+- Video: [youtu.be/8x6YpkRq_5M](https://youtu.be/8x6YpkRq_5M)
+- More experiments: [garyparker.dev/measured](https://garyparker.dev/measured)
+- Newsletter: [garyparker.dev/newsletter](https://garyparker.dev/newsletter)
+<!-- links:end -->
